@@ -34,17 +34,16 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-  ╭──━━━━══➻══━━━━━╮
+  ╭──━━═━━━━━╮
   ┃ *bot name* : ${s.OWNER_NAME}
   ┃ *commander* : ${nomAuteurMessage} 
-  ┃ *date*: ${date}
   ┃ *prefix* : ${s.PREFIXE}
   ┃ *worktype* : ${mode}
   ┃ *plugin* : ${cm.length} 
   ┃ *rom* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
   ┃ *running on* : ${os.platform()}
   ┃ *time* : ${temps}
-  ╰──━━━━══➻══━━━━✣
+  ╰──━━═━━━━┈╯
 
   
   🔏ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴄᴏᴍᴍᴀɴᴅ💬
@@ -382,16 +381,4 @@ else {
     
 }
 
-});
- // Send an audio file
-        await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/JawadYTX/KHAN-DATA/raw/refs/heads/main/autovoice/sigma.m4a' }, // Audio URL
-            mimetype: 'audio/mp4',
-            ptt: true
-        }, { quoted: mek });
-
-    } catch (error) {
-        console.log(error);
-        reply(`Error: ${error.message}`);
-    }
 });
