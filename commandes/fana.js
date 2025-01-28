@@ -35,7 +35,7 @@ const date = moment().format('DD/MM/YYYY');
 
 let infoMsg =  `
 ╭──━━━━┈╮
-│ ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴏғғɪᴄᴇ
+│ Njabulo Jb office 
 │💬 ʙᴏᴛ ɴᴀᴍᴇ: ${a.OWNER_NAME}
 │🛸 ᴘʀᴇғɪx: ${s.PREDIXE}
 │🛸 ᴍᴏᴅᴇ: ${mode}
@@ -44,10 +44,6 @@ let infoMsg =  `
 │🧑‍🧑‍🧒‍🧒ᴛᴏᴛᴀʟ ᴜsᴇʀs: ${formattedRotalUsers}}
 │📟ᴜᴘᴛɪᴍᴇ: ${formatUptime(process.uptime())}
 ╰──━━━━┈╯
-
-│
-╰━┈➤ ${readmore}
-
 📜 *All command for happy JB*
 
 📄 *IA*
