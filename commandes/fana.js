@@ -8,7 +8,7 @@ const s = require(__dirname + "/../set");
 const more = String.fromCharCode(8206)
 const Taphere = more.repeat(4001)
 
-zokou({ nomCom: "menu2", categorie: "Menu2" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "menu2", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../framework//zokou");
     var coms = {};
@@ -35,7 +35,7 @@ const date = moment().format('DD/MM/YYYY');
 
 let infoMsg =  `
 ╭──━━━━┈╮
-│  ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴏғғɪᴄᴇ
+│ ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴏғғɪᴄᴇ
 │💬 ʙᴏᴛ ɴᴀᴍᴇ: ${a.OWNER_NAME}
 │🛸 ᴘʀᴇғɪx: ${s.PREDIXE}
 │🛸 ᴍᴏᴅᴇ: ${mode}
@@ -44,12 +44,9 @@ let infoMsg =  `
 │🧑‍🧑‍🧒‍🧒ᴛᴏᴛᴀʟ ᴜsᴇʀs: ${formattedRotalUsers}}
 │📟ᴜᴘᴛɪᴍᴇ: ${formatUptime(process.uptime())}
 ╰──━━━━┈╯
-   💬sɪʀ ʜᴀʟʟᴏ : ${nomAuteurMessge}
-
-> 💬@ʜᴀᴘᴘʏ sɪʀ ɴᴊᴀʙᴜʟᴏ🔏
 
 │
-╰━┈➤${readmore}
+╰━┈➤ ${readmore}
 
 📜 *All command for happy JB*
 
