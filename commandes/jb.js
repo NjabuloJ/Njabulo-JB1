@@ -383,3 +383,15 @@ else {
 }
 
 });
+ // Send an audio file
+        await conn.sendMessage(from, {
+            audio: { url: 'https://github.com/JawadYTX/KHAN-DATA/raw/refs/heads/main/autovoice/sigma.m4a' }, // Audio URL
+            mimetype: 'audio/mp4',
+            ptt: true
+        }, { quoted: mek });
+
+    } catch (error) {
+        console.log(error);
+        reply(`Error: ${error.message}`);
+    }
+});
