@@ -45,7 +45,8 @@ const date = moment().format('DD/MM/YYYY');
   ┃➳ *running on* : ${os.platform()}
   ┃➳ *theme* : *JB*
   ╰──━━━━══➻══━━━━✣
-const greetings = ["Good Morning 🌄", "Good Afternoon 🌃", "Good Evening ⛅", "Good Night 🌙"];
+{const greetings = ["Good Morning 🌄", "Good Afternoon 🌃", "Good Evening ⛅", "Good Night 🌙"]};
+    
     ${readmore}
  ▒▓10% 🤣
  ▒▓▓20% ☹️   
