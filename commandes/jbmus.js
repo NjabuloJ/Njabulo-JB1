@@ -1,106 +1,94 @@
-const axios = require("axios");
-const yts = require("yt-search");
-const { youtube } = require("btch-downloader");
-const { cmd } = require('../command');
+const util = require('util');
+const fs = require('fs-extra');
+const { zokou } = require(__dirname + "/../framework/zokou");
+const { format } = require(__dirname + "/../framework/mesfonctions");
+const os = require("os");
+const moment = require("moment-timezone");
+const s = require(__dirname + "/../set");
+const more = String.fromCharCode(8206)
+const readmore = more.repeat(4001)
 
-cmd({
-  pattern: 'audio3',
-  alias: ['spotify', "ytmusic", "play"],
-  react: '🎸',
-  desc: "Fetch audio from Spotify or YouTube",
-  category: "media",
-  filename: __filename
-}, async (client, message, details, context) => {
-  const { q, from, reply } = context;
-
-  if (!q) {
-    return reply("Please provide a title or link (Spotify/YouTube)!");
-  }
-
-  reply("Njabulo JB Fetching audio... 💬");
-
-  let spotifySent = false;
-  let youtubeSent = false;
-
-  try {
-    // Fetch from Spotify
-    const spotifyResponse = await axios.get(
-      `https://spotifyapi.caliphdev.com/api/search/tracks?q=${encodeURIComponent(q)}`
-    );
-    const spotifyTrack = spotifyResponse.data?.[0]; // Safely access first track
-
-    if (spotifyTrack) {
-      const trackStream = await axios({
-        url: `https://spotifyapi.caliphdev.com/api/download/track?url=${encodeURIComponent(spotifyTrack.url)}`,
-        method: "GET",
-        responseType: 'stream'
-      });
-
-      if (trackStream.headers["content-type"]?.includes("audio/mpeg")) {
-        await client.sendMessage(from, {
-          audio: trackStream.data,
-          mimetype: "audio/mpeg",
-          contextInfo: {
-            externalAdReply: {
-              title: spotifyTrack.title,
-              body: "Njabulo JB 🥰💖: SPOTIFY",
-              mediaType: 1,
-              sourceUrl: spotifyTrack.url,
-              renderLargerThumbnail: true
-            }
-          }
-        });
-        spotifySent = true;
-      } else {
-        console.log("Spotify stream not in audio/mpeg format.");
-      }
-    } else {
-      console.log("No Spotify track found.");
+zokou({ nomCom: "jb", categorie: "jb" }, async (dest, zk, commandeOptions) => {
+    let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
+    let { cm } = require(__dirname + "/../framework//zokou");
+    var coms = {};
+    var mode = "public";
+    
+    if ((s.MODE).toLocaleLowerCase() != "yes") {
+        mode = "private";
     }
-  } catch (error) {
-    console.error("Spotify Error:", error.message);
-  }
 
-  try {
-    // Fetch from YouTube
-    const youtubeSearchResults = await yts(q);
-    const youtubeVideo = youtubeSearchResults.videos[0];
 
-    if (youtubeVideo && youtubeVideo.seconds < 3600) { // Video duration < 1 hour
-      const youtubeAudio = await youtube(youtubeVideo.url);
+    
 
-      if (youtubeAudio?.mp3) {
-        await client.sendMessage(from, {
-          audio: { url: youtubeAudio.mp3 },
-          mimetype: "audio/mpeg",
-          contextInfo: {
-            externalAdReply: {
-              title: youtubeVideo.title,
-              body: "Njabulo JB 🥰: YOUTUBE",
-              mediaType: 1,
-              sourceUrl: youtubeVideo.url,
-              renderLargerThumbnail: true
-            }
-          }
-        });
-        youtubeSent = true;
-      } else {
-        console.log("Failed to fetch YouTube audio.");
-      }
-    } else {
-      console.log("No suitable YouTube results found.");
+    cm.map(async (com, index) => {
+        if (!coms[com.categorie])
+            coms[com.categorie] = [];
+        coms[com.categorie].push(com.nomCom);
+    });
+
+    moment.tz.setDefault('Etc/GMT');
+
+// Créer une date et une heure en GMT
+const temps = moment().format('HH:mm:ss');
+const date = moment().format('DD/MM/YYYY');
+
+  let infoMsg =  `
+  ╭──━━━━══➻══━━━━✣
+  ┃➳ *my owner* : ${s.OWNER_NAME}
+  ┃➳ *commander* : ${nomAuteurMessage} 
+  ┃➳ *date*: ${date}
+  ┃➳ *prefix* : ${s.PREFIXE}
+  ┃➳ *worktype* : ${mode} mode
+  ┃➳ *plugin* : ${cm.length} 
+  ┃➳ *rom* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+  ┃➳ *running on* : ${os.platform()}
+  ┃➳ *theme* : *JB*
+  ╰──━━━━══➻══━━━━✣
+const greetings = ["Good Morning 🌄", "Good Afternoon 🌃", "Good Evening ⛅", "Good Night 🌙"];
+    ${readmore}
+ ▒▓10% 🤣
+ ▒▓▓20% ☹️   
+ ▒▓▓▓30% 😂  
+ ▒▓▓▓▓40% 😭  
+ ▒▓▓▓▓▓50% 😆
+ ▒▓▓▓▓▓▓60% 😁
+ ▒▓▓▓▓▓▓▓70% 😅
+ ▒▓▓▓▓▓▓▓▓80% 🤤
+ ▒▓▓▓▓▓▓▓▓▓90% 🤫 
+ ▒▓▓▓▓▓▓▓▓▓▓100% ${readmore}
+ *ALL COMMAND ADDED✔️!* 
+ ╰──━━━━══➻══━━━━❂`;
+    
+let menuMsg =  `  
+    
+`;
+
+   var lien = mybotpic();
+
+   if (lien.match(/\.(mp4|gif)$/i)) {
+    try {
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Njabulomd*, déveloper Njabulo Jb" , gifPlayback : true }, { quoted: ms });
     }
-  } catch (error) {
-    console.error("YouTube Error:", error.message);
-  }
+    catch (e) {
+        console.log("🥵🥵 Menu erreur " + e);
+        repondre("🥵🥵 Menu erreur " + e);
+    }
+} 
+// Vérification pour .jpeg ou .png
+else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
+    try {
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Njabulomd*, déveloper Njabulo MD" }, { quoted: ms });
+    }
+    catch (e) {
+        console.log("🥵🥵 Menu erreur " + e);
+        repondre("🥵🥵 Menu erreur " + e);
+    }
+} 
+else {
+    
+    repondre(infoMsg + menuMsg);
+    
+}
 
-  if (!spotifySent && !youtubeSent) {
-    reply("Failed to fetch audio from both Spotify and YouTube.");
-  } else if (spotifySent && youtubeSent) {
-    reply("Both Spotify and YouTube audio sent successfully.");
-  } else if (spotifySent) {
-    reply("RHODVICK TECH: Spotify audio sent successfully.");
-  } else if (youtubeSent) {
-    reply("*Njabulo JB: Download and successfully*.");
-  }
 });
