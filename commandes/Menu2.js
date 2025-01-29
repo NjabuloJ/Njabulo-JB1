@@ -65,36 +65,32 @@ const date = moment().format('DD/MM/YYYY');
 
 
   let infoMsg =  `
-╭────✧${s.BOT}✧────◆
-NJABULO JB 
-     ╭──────────────
-|❏│   *_Prefix_* : ${s.PREFIXE}
-|❏│   *_Propriétaire_* : ${s.OWNER_NAME}
-|❏│   _Mode_ : ${mode}
-|❏│   *_Commandes_* : ${cm.length}
-|❏│   *_Date_* : ${date}
-|❏│   *_Hour_* : ${temps}
-|❏│   *_RAM_* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-|❏│   *_Plateforme_* : ${os.platform()}
-|❏│   *_Developer_* : *JB*
-|❏│   *_Nation_ : BOTSWANA*
-    ╰───────────────
-╰─────✧NJABULO-JB✧─────◆ \n\n`;
+╭──━━═━━━━━╮
+┃🛸 *_Prefix_* : ${s.PREFIXE}
+┃💬 *_bot name_* : ${s.OWNER_NAME}
+┃🔏 _Mode_ : ${mode}
+┃📃 *_Commandes_* : ${cm.length}
+┃📆 *_Date_* : ${date}
+┃⏰ *_Hour_* : ${temps}
+┃🗄️ *_RAM_* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+┃👩‍💻 *_Plateforme_* : ${os.platform()}
+┃🛸 *_Developer_* : *JB*
+╰──━━═━━━━┈╯\n\n`;
     
     let menuMsg = `
-👋 𝐎𝐳𝐚𝐚𝐚𝐚 ${nomAuteurMessage}, THI IS NJABULO~JB 👋
+👋 HAPPY ${nomAuteurMessage}, THI IS NJABULO~JB 👋
 
-*💬I'M NJABULO JB 🔏:*
+*💬I'M NJABULO JB ALL COMMAND 🔏:*
 ◇                             ◇
 `;
 
     if (commandeOptions.categorie) {
         const categorieSelectionnee = commandeOptions.categorie;
         if (coms[categorieSelectionnee]) {
-            menuMsg += `╭────🇿🇼${categorieSelectionnee} ❏ ✧────`;
+            menuMsg += `╭────🔏${categorieSelectionnee} ❏ ✧────`;
             for (const cmd of coms[categorieSelectionnee]) {
                 menuMsg += `
-*☞︎︎︎ ${cmd}*`;
+*- . ${cmd}*`;
             }
             menuMsg += `
 ╰═════════════⊷\n`;
@@ -103,10 +99,10 @@ NJABULO JB
         }
     } else {
         for (const cat in coms) {
-            menuMsg += `╭────🇧🇼${cat} ❏ ✧────`;
+            menuMsg += `╭────💬${cat} ❏ ✧────`;
             for (const cmd of coms[cat]) {
                 menuMsg += `
-*☞︎︎︎ ${cmd}*`;
+*- . ${cmd}*`;
             }
             menuMsg += `
 ╰═════════════⊷ \n`;
@@ -114,12 +110,6 @@ NJABULO JB
     }
 
     menuMsg += `
-◇            ◇
-*»»————— ★ —————««*
-" 💬🔏💬🔏💬🔏💬🔏."
- 
-    *Deployed by Njabulo teams*
-*»»—————    ★   —————««*
 `;
 
     var lien = mybotpic();
@@ -142,3 +132,4 @@ NJABULO JB
         repondre(infoMsg + menuMsg);
     }
 });
+neko
