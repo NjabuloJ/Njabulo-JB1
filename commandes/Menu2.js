@@ -66,46 +66,49 @@ const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
 ╭──━━═━━━━━╮
-┃🛸 *_Prefix_* : ${s.PREFIXE}
-┃💬 *_bot name_* : ${s.OWNER_NAME}
-┃🔏 _Mode_ : ${mode}
-┃📃 *_Commandes_* : ${cm.length}
-┃📆 *_Date_* : ${date}
-┃⏰ *_Hour_* : ${temps}
-┃🗄️ *_RAM_* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-┃👩‍💻 *_Plateforme_* : ${os.platform()}
-┃🛸 *_Developer_* : *JB*
+┃🛸 *ᴘʀᴇғɪx* : ${s.PREFIXE}
+┃💬 *ʙᴏᴛ ɴᴀᴍᴇ* : ${s.OWNER_NAME}
+┃🔏 *ᴍᴏᴅᴇ* : ${mode}
+┃📃 *ᴜsᴇ ʙᴏᴛ* : ${cm.length}
+┃📆 *ᴅᴀᴛᴇ* : ${date}
+┃⏰ *ʜᴏᴜʀ* : ${temps}
+┃🗄️ *ʀᴀᴍ* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+┃👩‍💻 *ᴘʟᴀᴛғᴏʀᴍ* : ${os.platform()}
+┃🛸 *ᴅᴇᴘʟᴏʏ : ᴏɴ ʜᴇʀᴏᴋᴜ*
 ╰──━━═━━━━┈╯\n\n`;
-    
-    let menuMsg = `
-👋 HAPPY ${nomAuteurMessage}, THI IS NJABULO~JB 👋
+   💬sɪʀ ʜᴀʟʟᴏ : ${nomAuteurMessge}
 
-*💬I'M NJABULO JB ALL COMMAND 🔏:*
+> 💬@ʜᴀᴘᴘʏ sɪʀ ɴᴊᴀʙᴜʟᴏ🔏
+
+│
+╰━┈➤${readmore}
+
+    *💬𝗡𝗝𝗔𝗕𝗨𝗟𝗢 𝗝𝗕 𝗢𝗙𝗙𝗜𝗖𝗘🔏*
 ◇                             ◇
 `;
 
     if (commandeOptions.categorie) {
         const categorieSelectionnee = commandeOptions.categorie;
         if (coms[categorieSelectionnee]) {
-            menuMsg += `╭────🔏${categorieSelectionnee} ❏ ✧────`;
+            menuMsg += `📜🔏${categorieSelectionnee} 📃`;
             for (const cmd of coms[categorieSelectionnee]) {
                 menuMsg += `
-*- . ${cmd}*`;
+- . ${cmd}`;
             }
             menuMsg += `
-╰═════════════⊷\n`;
+📃\n`;
         } else {
             menuMsg += `La catégorie "${categorieSelectionnee}" n'existe pas.\n`;
         }
     } else {
         for (const cat in coms) {
-            menuMsg += `╭────💬${cat} ❏ ✧────`;
+            menuMsg += `📄💬${cat} 📄`;
             for (const cmd of coms[cat]) {
                 menuMsg += `
-*- . ${cmd}*`;
+- . ${cmd}`;
             }
             menuMsg += `
-╰═════════════⊷ \n`;
+📜 \n`;
         }
     }
 
