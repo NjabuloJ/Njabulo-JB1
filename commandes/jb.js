@@ -83,6 +83,7 @@ const date = moment().format('DD/MM/YYYY');
 - .update
 - .hack
 - .menu
+- .menu-list 
 
 📃 *Group*
 - .kickall
@@ -130,12 +131,10 @@ const date = moment().format('DD/MM/YYYY');
 
 📃 *Fun*
 - .hack
-- .ranime
 - .fancy
 - .profile
 - .quote
 - .rank
-- .toprank
 
 🗒️ *Search*
 - .google
@@ -151,7 +150,6 @@ const date = moment().format('DD/MM/YYYY');
 🗒️ *Conversion*
 - .emomix
 - .sticker
-- .scrop
 - .take
 - .write
 - .photo
@@ -173,19 +171,15 @@ const date = moment().format('DD/MM/YYYY');
 - .reverse
 - .slow
 - .smooth
-- .tempo
-- .nightcore
-- .ring
-- .ringtone 
+- .tempo 
 
 📃 *God-first*
 - .bible
 
 🗒️*Menu*
 - .bugmenu
-- .donwmenu
 - .help
-- .list 
+- .menu-list 
 
 📄 *Image-Edit*
 - .shit
@@ -250,31 +244,17 @@ const date = moment().format('DD/MM/YYYY');
 - .birthday
 - .comic
 - .zodiac
-- .underwater2
+- .water2
 - .glow
-- .avatargold
 - .bokeh
 - .firework
 - .gaming
 - .signature
 - .luxury
 - .dragonfire
-- .queencard
-- .graffiticolor
-- .tattoo
-- .pentakill
-- .halloween1
-- .horror
-- .halloween2
-- .women's-day
-- .valentine
-- .neonlight
-- .assassin
 - .foggy
 - .summer
 - .light
-- .moderngold
-- .cartoonstyle
 - .galaxy
 - .hacker
 - .dragonball
@@ -287,9 +267,7 @@ const date = moment().format('DD/MM/YYYY');
 - .christmas
 - .frost
 - .christmas
-- .mechanical 
-
-🗒️ *Reaction*
+📄 *Reaction*
 - .bully
 - .cuddle
 - .cry
@@ -330,18 +308,11 @@ const date = moment().format('DD/MM/YYYY');
 - .vv
 
 🗒️ *Bug-cmds*
-- .bu
+- .bugmenu
 - .bug
 - .crash
 - .loccrash
 - .crashbug
-- .amountbug
-- .pmbug
-- .delaybug
-- .docubug
-- .unlimi
-- .bombug 
-- .trolly
 
 📄 *anime*
 - .waifu
