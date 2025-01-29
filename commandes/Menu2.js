@@ -14,7 +14,7 @@ const s = require(__dirname + "/../set");
 
 
 
-zokou({ nomCom: "MENU1", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "list", categorie: "list" }, async (dest, zk, commandeOptions) => {
 
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
 
@@ -78,7 +78,6 @@ NJABULO JB
 |❏│   *_Plateforme_* : ${os.platform()}
 |❏│   *_Developer_* : *JB*
 |❏│   *_Nation_ : BOTSWANA*
-|❏|    𝘃𝗲𝗿𝘀𝗶𝗼𝗻    : 𝘝10.0.0
     ╰───────────────
 ╰─────✧NJABULO-JB✧─────◆ \n\n`;
     
@@ -92,7 +91,7 @@ NJABULO JB
     if (commandeOptions.categorie) {
         const categorieSelectionnee = commandeOptions.categorie;
         if (coms[categorieSelectionnee]) {
-            menuMsg += `╭────🇹🇿${categorieSelectionnee} ❏ ✧────`;
+            menuMsg += `╭────🇿🇼${categorieSelectionnee} ❏ ✧────`;
             for (const cmd of coms[categorieSelectionnee]) {
                 menuMsg += `
 *☞︎︎︎ ${cmd}*`;
