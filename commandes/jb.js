@@ -35,14 +35,15 @@ const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
   ╭──━━═━━━━━╮
-  ┃ *bot name* : ${s.OWNER_NAME}
-  ┃ *commander* : ${nomAuteurMessage} 
-  ┃ *prefix* : ${s.PREFIXE}
-  ┃ *worktype* : ${mode}
-  ┃ *plugin* : ${cm.length} 
-  ┃ *rom* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-  ┃ *running on* : ${os.platform()}
-  ┃ *time* : ${temps}
+  ┃💬 *bot name* : ${s.OWNER_NAME}
+  ┃🧚 *commander* : ${nomAuteurMessage} 
+  ┃🛸 *prefix* : ${s.PREFIXE}
+  ┃🔏 *worktype* : ${mode}
+  ┃🛸 *plugin* : ${cm.length} 
+  ┃🚀 *rom* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+  ┃📟 *running on* : ${os.platform()}
+  ┃📆 *date* ${date}
+  ┃⏱️ *time* : ${temps}
   ╰──━━═━━━━┈╯
 
   
