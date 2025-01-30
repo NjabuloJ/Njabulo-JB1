@@ -80,7 +80,7 @@ const date = moment().format('DD/MM/YYYY');
 - .test
 - .uptime
 - .ss
-- .update
+- .play1
 - .hack
 - .menu
 - .menu-list 
@@ -141,7 +141,7 @@ const date = moment().format('DD/MM/YYYY');
 - .movie
 - .weather
 - .img
-- .movie
+- .videodoc
 - .define
 - .lyrics
 - .stickersearch
@@ -160,10 +160,13 @@ const date = moment().format('DD/MM/YYYY');
 - .fb
 - .tiktok
 - .fb2
+- .play2
+- .song2
+- .video 
+- .movie
 - .play
 - .song
-- .video 
-- .movie 
+- .video2 
 
 📜 *Audio-Edit*
 - .deep
@@ -324,7 +327,7 @@ const date = moment().format('DD/MM/YYYY');
     
 let menuMsg = `  
     
-`;
+@ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴏғғɪᴄᴇ 2025`;
 
    var lien = mybotpic();
 
