@@ -3,7 +3,7 @@ const {
 } = require("../framework/zokou");
 const yts = require("yt-search");
 zokou({
-  'nomCom': "play2",
+  'nomCom': "play",
   'categorie': "Download",
   'reaction': '🎶'
 }, async (_0x3bb19c, _0x1b59c4, _0x1ac9b2) => {
@@ -57,9 +57,9 @@ zokou({
   }
 });
 zokou({
-  'nomCom': "song2",
+  'nomCom': "song",
   'categorie': "Download",
-  'reaction': '💿'
+  'reaction': '🎧'
 }, async (_0x1edfc4, _0x1eac3a, _0x566003) => {
   const {
     ms: _0x3c5056,
@@ -111,7 +111,7 @@ zokou({
   }
 });
 zokou({
-  'nomCom': "videow",
+  'nomCom': "video",
   'categorie': "Download",
   'reaction': '🎥'
 }, async (_0x1865cc, _0x52cb5d, _0x3ecbfa) => {
@@ -166,9 +166,9 @@ zokou({
   }
 });
 zokou({
-  'nomCom': "videodoc",
+  'nomCom': "video1",
   'categorie': "Download",
-  'reaction': '🎥'
+  'reaction': '🗃️'
 }, async (_0x24206b, _0x2303c4, _0x1a65e4) => {
   const {
     ms: _0x338395,
