@@ -45,6 +45,8 @@ const date = moment().format('DD/MM/YYYY');
   ┃➳ *running on* : ${os.platform()}
   ┃➳ *theme* : *JB*
   ╰──━━━━══➻══━━━━✣ ${readmore}
+Hallo : ${"Good Morning 🌄", "Good Afternoon 🌃", "Good Evening ⛅", "Good Night 🌙";}
+ 
  ▒▓10% 🤣
  ▒▓▓20% ☹️   
  ▒▓▓▓30% 😂  
