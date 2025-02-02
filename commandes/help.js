@@ -45,8 +45,6 @@ const date = moment().format('DD/MM/YYYY');
   ┃➳ *running on* : ${os.platform()}
   ┃➳ *theme* : *JB*
   ╰──━━━━══➻══━━━━✣ ${readmore}
-Hallo :${s.OWNER_NAME} ${Good_Morning🌄}$Good_Afternoon🌃}$Good_Night🌙}
- 
  ▒▓10% 🤣
  ▒▓▓20% ☹️   
  ▒▓▓▓30% 😂  
@@ -62,7 +60,18 @@ Hallo :${s.OWNER_NAME} ${Good_Morning🌄}$Good_Afternoon🌃}$Good_Night🌙}
     
 let menuMsg = `  
     
-`;
+const getGreeting = () => {
+            const currentHour = DateTime.now().setZone('Africa/Nairobi').hour;
+
+            if (currentHour >= 5 && currentHour < 12) {
+                return 'Good morning 🌄';
+            } else if (currentHour >= 12 && currentHour < 18) {
+                return 'Good afternoon ☀️';
+            } else if (currentHour >= 18 && currentHour < 22) {
+                return 'Good evening 🌆';
+            } else {
+                return 'Good night 😴';
+       }`;
 
    var lien = mybotpic();
 
