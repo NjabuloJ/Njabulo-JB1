@@ -23,7 +23,7 @@ zokou({
     _0x322f75 = _0x1b000a.videos;
     if (_0x322f75 && _0x322f75.length > 0) {
       const _0x165324 = _0x322f75[0].url;
-      const _0xd95cfd = await fetch("https://api-rin-tohsaka.vercel.app/download/ytmp4?url=$" + encodeURIComponent(_0x165324) + "&apikey=" + "gifted");
+      const _0xd95cfd = await fetch("https://api.dreaded.site/api/ytdl/audio?url=$" + encodeURIComponent(_0x165324) + "&apikey=" + "gifted");
       const _0x257cbf = await _0xd95cfd.json();
       if (_0x257cbf.status === 200 && _0x257cbf.success) {
         const _0x53c40a = _0x257cbf.result.download_url;
@@ -44,7 +44,7 @@ zokou({
         }, {
           'quoted': _0x57f480
         });
-        _0x1ae903("*𝙨𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡 𝙙𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙚𝙙*...");
+        _0x1ae903("*enjoy music is life my friend*...");
       } else {
         _0x1ae903("Failed to download audio. Please try again later.");
       }
@@ -77,7 +77,7 @@ zokou({
     _0x3dc8e2 = _0x27469b.videos;
     if (_0x3dc8e2 && _0x3dc8e2.length > 0) {
       const _0x573538 = _0x3dc8e2[0].url;
-      const _0x434f90 = await fetch("https://www.dark-yasiya-api.site/download/ytmp3?url=$url=" + encodeURIComponent(_0x573538) + "&apikey=" + "gifted");
+      const _0x434f90 = await fetch("https://api.giftedtech.web.id/api/download/dlmp3?url=$" + encodeURIComponent(_0x573538) + "&apikey=" + "gifted");
       const _0x3bdb70 = await _0x434f90.json();
       if (_0x3bdb70.status === 200 && _0x3bdb70.success) {
         const _0x50496d = _0x3bdb70.result.download_url;
@@ -98,7 +98,7 @@ zokou({
         }, {
           'quoted': _0x3c5056
         });
-        _0x29c04a("*𝙨𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡 𝙙𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙚𝙙 𝙗𝙮...*");
+        _0x29c04a("*enjoy music is life my friend*");
       } else {
         _0x29c04a("Failed to download audio. Please try again later.");
       }
@@ -153,7 +153,7 @@ zokou({
         }, {
           'quoted': _0x4b29db
         });
-        _0x53a005("*𝙨𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡 𝙙𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙚𝙙*...");
+        _0x53a005("*enjoy music is life my friend*...");
       } else {
         _0x53a005("Failed to download the video. Please try again later.");
       }
@@ -208,7 +208,7 @@ zokou({
         }, {
           'quoted': _0x338395
         });
-        _0x1768d5("*𝙨𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡 𝙙𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙚𝙙*...");
+        _0x1768d5("*enjoy music is life my friend*...");
       } else {
         _0x1768d5("Failed to download the video. Please try again later.");
       }
