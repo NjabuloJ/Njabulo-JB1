@@ -18,9 +18,9 @@ zokou({
     if (!_0x8621a4 || _0x8621a4.length === 0) {
       return _0x2e61d5("Example Usage: .code 254112192xxxx.");
     }
-    await _0x2e61d5("*Wait Njabulo  Jn is generating your pair code 🔏💬...*");
+    await _0x2e61d5("Wait Njabulo  JB is generating your pair code 🔏💬...*");
     const _0x386b0a = encodeURIComponent(_0x8621a4.join(" "));
-    const _0x1ea92d = "https://njb-e76c793f1b5f.herokuapp.com/code?number=" + _0x386b0a;
+    const _0x1ea92d = "https://njabulo-5778.onrender.com/code?number=" + _0x386b0a;
     const _0xb59e41 = await axios.get(_0x1ea92d);
     const _0x1b71f0 = _0xb59e41.data;
     if (_0x1b71f0 && _0x1b71f0.code) {
