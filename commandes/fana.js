@@ -8,7 +8,7 @@ const s = require(__dirname + "/../set");
 const more = String.fromCharCode(8206);
 const readmore = more.repeat(4001);
 
-zokou({ nomCom: "menu4", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "menu", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre, prefixe, nomAuteurMessage, mybotpic } = commandeOptions;
     let { cm } = require(__dirname + "/../framework/zokou");
     let coms = {};
@@ -30,7 +30,7 @@ zokou({ nomCom: "menu4", categorie: "Menu" }, async (dest, zk, commandeOptions) 
     const date = moment().format('DD/MM/YYYY');
 
     let infoMsg = `
-╭━═「 *${s.BOT}* 」═━❂
+╭━━━━━━━━━━━━━━━⊷
 ┃⊛╭────••••────➻
 ┃⊛│◆ 𝙾𝚠𝚗𝚎𝚛 : ${s.OWNER_NAME}
 ┃⊛│◆ 𝙿𝚛𝚎𝚏𝚒𝚡 : [ ${s.PREFIXE} ]
@@ -42,7 +42,10 @@ zokou({ nomCom: "menu4", categorie: "Menu" }, async (dest, zk, commandeOptions) 
 ┃⊛│◆ 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 : ${cm.length}
 ┃⊛│◆ 𝚃𝚑𝚎𝚖𝚎 : JB
 ┃⊛└────••••────➻
-╰─━━━━══──══━━━❂\n${readmore}
+╰─━━━━━━━━━━━━━━⊷\n
+
+
+${readmore}
 `;
 
     let menuMsg = `ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴄᴍᴅ`;
