@@ -4,8 +4,8 @@ const ytSearch = require('yt-search');
 const conf = require(__dirname + '/../set');
 
 keith({
-  nomCom: "music",
-  aliases: ["song", "playdoc", "audio", "mp3"],
+  nomCom: "play4",
+  aliases: ["play4", "playdoc", "audio", "mp3"],
   categorie: "Search",
   reaction: "💬"
 }, async (dest, zk, commandOptions) => {
@@ -86,7 +86,7 @@ keith({
         contextInfo: {
           externalAdReply: {
             title: "𝗡𝗝𝗔𝗕𝗨𝗟𝗢 𝗝𝗕" ,
-            body: "𝗧𝗮𝗽 𝗵𝗲𝗿𝗲 𝘁𝗼 𝗳𝗼𝗹𝗹𝗼𝘄 𝗼𝘂𝗿 𝗰𝗵𝗮𝗻𝗻𝗲𝗹",
+            body: "Tap her to follow our channel",
             mediaType: 1,
             sourceUrl:"https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
             thumbnailUrl: firstVideo.thumbnail,
