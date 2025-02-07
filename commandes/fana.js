@@ -44,8 +44,11 @@ zokou({ nomCom: "menu", categorie: "Menu" }, async (dest, zk, commandeOptions) =
 ┃⊛└────••••────➻
 ╰─━━━━━━━━━━━━━━⊷\n
 
+🌆Good evening! time to relax
 
-${readmore}
+> ɴᴊᴀʙᴜʟᴏ ᴊʙ
+
+╰━━━••➤•••${readmore}
 `;
 
     let menuMsg = `ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴄᴍᴅ`;
