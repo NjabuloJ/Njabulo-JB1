@@ -21,7 +21,7 @@ zokou({
   const _0x451c3b = _0x5a815c.map(_0x526b71 => "🟢 PONG: " + _0x526b71 + " 🟢").join("\n");
   const _0x41d2b1 = {
     'externalAdReply': {
-      'title': "Njabulo_jb My Ultra Speed Response",
+      'title': "Njabulo_JB My Ultra Speed Response",
       'body': "Ping Results : " + _0x451c3b,
       'sourceUrl': "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
       'thumbnailUrl': "https://files.catbox.moe/8vd9ko.jpg",
