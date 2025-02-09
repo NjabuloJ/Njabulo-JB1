@@ -1,13 +1,14 @@
-const { keith } = require("../keizzah/keith");
+const { zokou } = require("../framework/zokou");
 const axios = require('axios');
 const ytSearch = require('yt-search');
 const conf = require(__dirname + '/../set');
 
-keith({
-  nomCom: "play4",
-  aliases: ["play4", "playdoc", "audio", "mp3"],
+// Define the command with aliases for play
+zokou({
+  nomCom: "music",
+  aliases: ["song", "playdoc", "audio", "mp3"],
   categorie: "Search",
-  reaction: "💬"
+  reaction: "🎶"
 }, async (dest, zk, commandOptions) => {
   const { arg, ms, repondre } = commandOptions;
 
@@ -49,8 +50,7 @@ keith({
       `https://api.giftedtech.web.id/api/download/dlmp3?url=${encodeURIComponent(videoUrl)}&apikey=gifted-md`,
       `https://api.dreaded.site/api/ytdl/audio?url=${encodeURIComponent(videoUrl)}`
     ];
-
-    let downloadData;
+let downloadData;
     for (const api of apis) {
       downloadData = await getDownloadData(api);
       if (downloadData && downloadData.success) break;
