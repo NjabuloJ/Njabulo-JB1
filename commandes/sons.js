@@ -5,7 +5,7 @@ const conf = require(__dirname + '/../set');
 
 // Define the command with aliases for play
 zokou({
-  nomCom: "play1",
+  nomCom: "play",
   aliases: ["song", "playdoc", "audio", "mp3"],
   categorie: "Search",
   reaction: "💬"
@@ -71,16 +71,16 @@ let downloadData;
     // Prepare the message with song details
     const messagePayload = {
       caption: `\n*𝗡𝗝𝗔𝗕𝗨𝗟𝗢 𝗝𝗕 𝗦𝗢𝗡𝗚𝗦*\n
-╭───────────────◆
-│ *Title:* ${songTitle} 
-│ *Quality:* High
-│ *Duration:* ${firstVideo.timestamp}
-╰────────────────◆
+╭━━━━━━━━━━━━━━━━━⊷
+┃ *Title:* ${songTitle} 
+┃ *Quality:* High
+┃ *Duration:* ${firstVideo.timestamp}
+╰━━━━━━━━━━━━━━━━━⊷
 ⦿ *Direct YtLink:* ${videoUrl}
 
-╭────────────────◆
-│ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗯𝘆 𝗡𝗝𝗔𝗕𝗨𝗟𝗢 𝗝𝗕
-╰─────────────────◆`,
+╭━━━━━━━━━━━━━━━━━⊷
+┃ _Hallo download and enjoy_
+╰━━━━━━━━━━━━━━━━━⊷`,
       document: { url: downloadUrl },
         mimetype: 'audio/mpeg',
         contextInfo: {
