@@ -5,10 +5,10 @@ const conf = require(__dirname + '/../set');
 
 // Define the command with aliases for play
 zokou({
-  nomCom: "music",
+  nomCom: "play1",
   aliases: ["song", "playdoc", "audio", "mp3"],
   categorie: "Search",
-  reaction: "🎶"
+  reaction: "💬"
 }, async (dest, zk, commandOptions) => {
   const { arg, ms, repondre } = commandOptions;
 
@@ -72,9 +72,9 @@ let downloadData;
     const messagePayload = {
       caption: `\n*𝗡𝗝𝗔𝗕𝗨𝗟𝗢 𝗝𝗕 𝗦𝗢𝗡𝗚𝗦*\n
 ╭───────────────◆
-│🎶 *Title:* ${songTitle} 
-│🎵 *Quality:* High
-│🎼 *Duration:* ${firstVideo.timestamp}
+│ *Title:* ${songTitle} 
+│ *Quality:* High
+│ *Duration:* ${firstVideo.timestamp}
 ╰────────────────◆
 ⦿ *Direct YtLink:* ${videoUrl}
 
