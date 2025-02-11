@@ -71,15 +71,15 @@ let downloadData;
     // Prepare the message with song details
     const messagePayload = {
       caption: `\n*𝗡𝗝𝗔𝗕𝗨𝗟𝗢 𝗝𝗕 𝗦𝗢𝗡𝗚𝗦*\n
-╭━━━━━━━━━━━━━━━━━⊷
+╭━⊷
 ┃ *Title:* ${songTitle} 
 ┃ *Quality:* High
 ┃ *Duration:* ${firstVideo.timestamp}
-╰━━━━━━━━━━━━━━━━━⊷
+╰━⊷
 ⦿ *Direct YtLink:* ${videoUrl}
 
-╭━━━━━━━━━━━━━━━━━⊷
-┃ _Hallo download and enjoy_
+╭━⊷
+┃ *DOWNLOAD AND ENJOY SOR*
 ╰━━━━━━━━━━━━━━━━━⊷`,
       document: { url: downloadUrl },
         mimetype: 'audio/mpeg',
