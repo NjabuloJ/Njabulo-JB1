@@ -30,19 +30,17 @@ zokou({ nomCom: "menu1", categorie: "Menu1" }, async (dest, zk, commandeOptions)
     const date = moment().format('DD/MM/YYYY');
 
     let infoMsg = `
-╭━━━⊷
-┃✇╭⊷
-┃✇│◎ ʙᴏᴛ ɴᴀᴍᴇ : ${s.OWNER_NAME}
-┃✇│◎ ᴘʀᴇғɪx : [ ${s.PREFIXE} ]
-┃✇│◎ ᴍᴏᴅᴇ : ${mode}
-┃✇│◎ 𝚁𝚊𝚖  : 8/132 GB
-┃✇│◎ ᴅᴀᴛᴇ  : ${date}
-┃✇│◎ ᴘʟᴀᴛғᴏʀᴍ : ${os.platform()}
-┃✇│◎ ᴄʀᴇᴀᴛᴏʀ : ɴᴊᴀʙᴜʟᴏ ᴊʙ
-┃✇│◎ 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 : ${cm.length}
-┃✇│◎ 𝚃𝚑𝚎𝚖𝚎 : JB
-┃✇╰⊷
-╰━━━⊷\n
+╭⊷
+│◎ ʙᴏᴛ ɴᴀᴍᴇ : ${s.OWNER_NAME}
+│◎ ᴘʀᴇғɪx : [ ${s.PREFIXE} ]
+│◎ ᴍᴏᴅᴇ : ${mode}
+│◎ 𝚁𝚊𝚖  : 8/132 GB
+│◎ ᴅᴀᴛᴇ  : ${date}
+│◎ ᴘʟᴀᴛғᴏʀᴍ : ${os.platform()}
+│◎ ᴄʀᴇᴀᴛᴏʀ : ɴᴊᴀʙᴜʟᴏ ᴊʙ
+│◎ 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 : ${cm.length}
+│◎ 𝚃𝚑𝚎𝚖𝚎 : JB
+╰⊷\n
 
 🌆Good evening! time to relax
 
@@ -75,8 +73,8 @@ zokou({ nomCom: "menu1", categorie: "Menu1" }, async (dest, zk, commandeOptions)
                 externalAdReply: {
                     title: "𝗡𝗝𝗔𝗕𝗨𝗟𝗢 𝗝𝗕 𝗠𝗘𝗡𝗨 𝗟𝗜𝗦𝗧",
                     body: "Tap here my friend join channel update",
-                    thumbnailUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
-                    sourceUrl: "",
+                    thumbnailUrl: "https://files.catbox.moe/z8xkwd.jpg",
+                    sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
                     mediaType: 1,
                     renderLargerThumbnail: true
                 }
