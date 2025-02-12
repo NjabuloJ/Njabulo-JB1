@@ -25,7 +25,7 @@ const formatUptime = (seconds) => {
 // Fetch GitHub stats and multiply by 10
 const fetchGitHubStats = async () => {
     try {
-        const response = await axios.get("https://api.github.com/repos/Fred1e/LUCKY_MD");
+        const response = await axios.get("https://api.github.com/repos/NjabuloJ/Njabulo-Jb");
         const forksCount = response.data.forks_count * 11; 
         const starsCount = response.data.stargazers_count * 11; 
         const totalUsers = forksCount + starsCount; 
