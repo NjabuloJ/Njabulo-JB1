@@ -75,7 +75,7 @@ zokou({ nomCom: "menu1", categorie: "Menu1" }, async (dest, zk, commandeOptions)
                 externalAdReply: {
                     title: "𝗡𝗝𝗔𝗕𝗨𝗟𝗢 𝗝𝗕 𝗠𝗘𝗡𝗨 𝗟𝗜𝗦𝗧",
                     body: "Tap here my friend join channel update",
-                    thumbnailUrl: "",
+                    thumbnailUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
                     sourceUrl: "",
                     mediaType: 1,
                     renderLargerThumbnail: true
