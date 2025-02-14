@@ -21,7 +21,7 @@ const toFancyLowercaseFont = (text) => {
 // Command to list all bot commands along with descriptions and aliases
 zokou({
     nomCom: "help",
-    reaction: "⚔️",
+    reaction: "💬",
     aliases: ["panelist", "commandlist", "cmdlist", "list"],
     desc: "Get bot command list.",
     categorie: "universal"
@@ -29,7 +29,7 @@ zokou({
     const { respond, prefix, nomAuteurMessage } = context;
     const commands = require(__dirname + "/../framework/zokou").cm;
 
-    let menu = 'ᴅᴜʟʟᴀʜ-xᴍᴅ v² ʟɪsᴛ\n\n';
+    let menu = 'Njabulo JB\n\n';
     let keithList = [];
 
     // Loop through all commands to fetch the relevant information (commands, description, and aliases)
@@ -59,10 +59,10 @@ zokou({
         text: menu,
         contextInfo: {
             externalAdReply: {
-                title: "ᴅᴜʟʟᴀʜ-xᴍᴅ v²",
-                body: "𝐫𝐞𝐠𝐚𝐫𝐝𝐬 ᴅᴜʟʟᴀʜ-xᴍᴅ",
-                thumbnailUrl: "https://files.catbox.moe/533oqh.jpg",
-                sourceUrl: "https://chat.whatsapp.com/IdRXU9UcO8K50GPelOyhxh",
+                title: "Njabulo JB",
+                body: "𝐫𝐞𝐠𝐚𝐫𝐝𝐬 ɴᴊᴀʙᴜʟᴏ-ᴊʙ",
+                thumbnailUrl: "https://files.catbox.moe/70u16l.jpg",
+                sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
                 mediaType: 1,
                 renderLargerThumbnail: true
             }
