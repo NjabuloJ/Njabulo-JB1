@@ -42,7 +42,7 @@ zokou({ nomCom: "menu1", categorie: "Menu1" }, async (dest, zk, commandeOptions)
 *╰⊷*\n
 
 *╭────────────────────╮*
-*🌆Good evening! time to relax🌄*
+*☀️Good evening! time to relax🌙*
 *╰────────────────────╯*
 ╰━•➤•${readmore}
 `;
@@ -55,7 +55,7 @@ zokou({ nomCom: "menu1", categorie: "Menu1" }, async (dest, zk, commandeOptions)
  `;
         for (const cmd of coms[cat]) {
             menuMsg += `          
-- . ${s.PREFIXE}  ${cmd}`;    
+- . ${cmd}`;    
         }
         menuMsg += `
 `;
@@ -63,7 +63,7 @@ zokou({ nomCom: "menu1", categorie: "Menu1" }, async (dest, zk, commandeOptions)
     
     menuMsg += `
 ╭──────────────────╮
-┃✧https://shorturl.at/q8ZuS
+┃✧𝗠𝗔𝗗𝗘 𝗕𝗬 𝗡𝗝𝗔𝗕𝗨𝗟𝗢 𝗝𝗕
 ╰──────────────────╯\n`;
 
     try {
