@@ -49,7 +49,7 @@ zokou({ nomCom: "list", categorie: "list" }, async (dest, zk, commandeOptions) =
     
     for (const cat in coms) {
         menuMsg += `
-╭─•〔 *${cat}* 〕────┈⊷`
+╭─•〔 *${cat}* 〕─┈⊷`
 │◦➛╭────────────⊷ `;
         for (const cmd of coms[cat]) {
             menuMsg += `          
@@ -72,7 +72,7 @@ zokou({ nomCom: "list", categorie: "list" }, async (dest, zk, commandeOptions) =
                 externalAdReply: {
                     title: "𝗡𝗝𝗔𝗕𝗨𝗟𝗢 𝗝𝗕 𝗠𝗘𝗡𝗨 𝗟𝗜𝗦𝗧",
                     body: "Tap here my friend join channel update",
-                    thumbnailUrl: "https://files.catbox.moe/60hwdx.jpeg",
+                    thumbnailUrl: "",
                     sourceUrl: "",
                     mediaType: 1,
                     renderLargerThumbnail: true
