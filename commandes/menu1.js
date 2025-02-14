@@ -8,7 +8,7 @@ const s = require(__dirname + "/../set");
 const more = String.fromCharCode(8206);
 const readmore = more.repeat(4001);
 
-zokou({ nomCom: "list", categorie: "list" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "menu1", categorie: "menu1" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre, prefixe, nomAuteurMessage, mybotpic } = commandeOptions;
     let { cm } = require(__dirname + "/../framework/zokou");
     let coms = {};
@@ -72,8 +72,8 @@ zokou({ nomCom: "list", categorie: "list" }, async (dest, zk, commandeOptions) =
                 externalAdReply: {
                     title: "𝗡𝗝𝗔𝗕𝗨𝗟𝗢 𝗝𝗕 𝗠𝗘𝗡𝗨 𝗟𝗜𝗦𝗧",
                     body: "Tap here my friend join channel update",
-                    thumbnailUrl: "",
-                    sourceUrl: "",
+                    thumbnailUrl: "https://files.catbox.moe/s7mp0j.jpg",
+                    sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
                     mediaType: 1,
                     renderLargerThumbnail: true
                 }
