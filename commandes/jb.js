@@ -30,37 +30,41 @@ zokou({ nomCom: "menu1", categorie: "Menu1" }, async (dest, zk, commandeOptions)
     const date = moment().format('DD/MM/YYYY');
 
     let infoMsg = `
-╭⊷
-│◎ ʙᴏᴛ ɴᴀᴍᴇ : ɴᴊᴀʙᴜʟᴏ ᴊʙ
-│◎ ᴘʀᴇғɪx : [ ${s.PREFIXE} ]
-│◎ ᴍᴏᴅᴇ : ${mode}
-│◎ ᴅᴀᴛᴇ  : ${date}
-│◎ ᴘʟᴀᴛғᴏʀᴍ : ${os.platform()}
-│◎ ᴄʀᴇᴀᴛᴏʀ : bw ᴊʙ
-│◎ 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 : ${cm.length}
-╰⊷\n
+*╭⊷*
+┃✧ ʙᴏᴛ ɴᴀᴍᴇ : ɴᴊᴀʙᴜʟᴏ ᴊʙ
+┃✧ ʙᴏᴛ ᴜsᴇʀ : ${nomAuteurMessage} 
+┃✧ ᴘʀᴇғɪx : *[ ${s.PREFIXE} ]*
+┃✧ ᴍᴏᴅᴇ : ${mode}
+┃✧ ᴘʟᴀᴛғᴏʀᴍ : ${os.platform()}
+┃✧ ᴅᴀᴛᴇ  : ${date}
+┃✧ ᴛɪᴍᴇ : ${temps}
+┃✧ ʀᴏᴍ : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+*╰⊷*\n
 
-🌆Good evening! time to relax
-
-╰━━━••➤•••${readmore}
+*╭────────────────────╮*
+*🌆Good evening! time to relax🌄*
+*╰────────────────────╯*
+╰━•➤•${readmore}
 `;
 
     let menuMsg = `ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴄᴍᴅ`;
     
     for (const cat in coms) {
         menuMsg += `
-📑 *${cat}*
-⚪ `;
+ *${cat}*
+ `;
         for (const cmd of coms[cat]) {
             menuMsg += `          
-⚪ ${s.PREFIXE}  ${cmd}`;    
+- . ${s.PREFIXE}  ${cmd}`;    
         }
         menuMsg += `
-⚪`;
+`;
     }
     
     menuMsg += `
-> @ᴍᴀᴅᴇ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ 2025\n`;
+╭──────────────────╮
+┃✧https://shorturl.at/q8ZuS
+╰──────────────────╯\n`;
 
     try {
         const senderName = nomAuteurMessage || message.from;  // Use correct variable for sender name
