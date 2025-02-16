@@ -8,10 +8,10 @@ function zokou(obj, fonctions) {
     if (!obj.reaction) {
         infoComs.reaction = "🥰";
     }
-    infoComs.fonction = fonctions;
+    infoComs.fonctionfunctions;
     cm.push(infoComs);
     // console.log('chargement...')
     return infoComs;
 }
-module.exports = { zokou, Module: zokou, cm };
+module.exports { zokou, Module: zokou, cm };
 
