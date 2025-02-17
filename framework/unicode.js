@@ -46,10 +46,10 @@ function StyleText() {
             i > 0 &&
             (ch == "\u0324" ||
               ch == "\u0317" ||
-              ch == "\u0316" ||
+              ch == "\u0326" ||
               ch == "\u032e")
           ) {
-            ch = this.map[text.charAt(i - 1) + ch];
+            ch = this.map[i - 1) + ch];
             ret.pop();
           } else {
             ch = this.map[ch];
