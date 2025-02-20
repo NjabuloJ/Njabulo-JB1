@@ -39,7 +39,7 @@
     },
       "AUTO_REACT_STATUS": {
       "description":"Enter yes for your bot to auto react status",
-      "value":"yes",
+      "value":"yes💗",
       "required":false
     },
     "PM_PERMIT": {
@@ -80,12 +80,12 @@
     "OWNER_NAME": {
       "desc": "Your Name",
       "required": false,
-      "value": "Njabulo"
+      "value": "Njabulo JB"
     },
     "NUMERO_OWNER": {
       "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
       "required": false,
-      "value": "254740007567"
+      "value": "26777821911"
     },
     "WARN_COUNT": {
       "desc": "this is the limit of warn for warning commandes",
