@@ -132,7 +132,7 @@ function getCurrentDateTime() {
 setInterval(async () => {
     if (conf.AUTO_BIO === "yes") {
         const currentDateTime = getCurrentDateTime(); // Get the current date and time
-        const bioText = `👻 ᴘᴏᴘᴋɪᴅ x-ᴛᴇᴄʜ 👻 ɪs ᴏɴʟɪɴᴇ : ${currentDateTime}`; // Format the bio text
+        const bioText = `ɴᴊᴀʙᴜʟᴏ ᴊʙ ɪs ᴏɴʟɪɴᴇ : ${currentDateTime}`; // Format the bio text
         await zk.updateProfileStatus(bioText); // Update the bio
         console.log(`Updated Bio: ${bioText}`); // Log the updated bio
     }
@@ -147,13 +147,13 @@ setInterval(async () => {
 
     await zk.rejectCall(callId, callerId);
     await zk.sendMessage(callerId, {
-      text: "*sᴏʀʀʏ!! ɴᴏ ᴄᴀʟʟs ᴀʟʟᴏᴡᴇᴅ, ᴋɪɴᴅʟʏ ᴛᴇxᴛ.*\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴜsᴛᴀғғᴀ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ."
+      text: "*sᴏʀʀʏ!! ɴᴏ ᴄᴀʟʟs ᴀʟʟᴏᴡᴇᴅ, ᴋɪɴᴅʟʏ ᴛᴇxᴛ.*\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ."
     });
   }
 });
 
         // Default auto-reply message
-let auto_reply_message = "ᴛʜᴇ ᴏᴡɴᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ,,ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ. ᴡᴇ ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ sᴏᴏɴ.\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴜsᴛᴀғғᴀ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ.";
+let auto_reply_message = "ᴛʜᴇ ᴏᴡɴᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ,,ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ. ᴡᴇ ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ sᴏᴏɴ.\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ.";
 
 // Track contacts that have already received the auto-reply
 let repliedContacts = new Set();
@@ -581,7 +581,7 @@ function mybotpic() {
             
             };
                  
-// POPKID MD DID EVERYTHING ,,,DO NOT COPY ...
+// NJABULO JB DID EVERYTHING ,,,DO NOT COPY ...
 if (!superUser && origineMessage  === auteurMessage && conf.AUTO_REACT === "yes") {
 const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '🛰️', '🥔', '🎡', '🎸', '🎼', '🔉', '📿', '🪇', '📹', '🎞️', '🪔', '📔', '🏷️', '💰', '📥', '🗳️', '📭', '🖌️', '📏', '', '🪛', '🔨', '⛓️‍💥', '📌', '🗝️', '🔍', '🥁', '🔊', '🥾', '👢', '🩰', '👡', '🙂', '🎊', '🎉', '🎁', '⛑️', '👋']
          const emokis = emojis[Math.floor(Math.random() * (emojis.length))]
@@ -1317,20 +1317,20 @@ zk.ev.on('group-participants.update', async (group) => {
                 console.log("ℹ️ Popkid md connecting in your account...");
             }
             else if (connection === 'open') {
-                console.log("✅ Popkid Md connected successfully☺️");
+                console.log("ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴄᴏɴɴᴇᴄᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log(" Popkid-md loading plugins😇\n\n");
+                console.log(" Njabulo Jbloading plugins😇\n\n");
                 //chargement des commandes 
                 console.log("chargement des plugins ...\n");
                 fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
                             require(__dirname + "/commandes/" + fichier);
-                            console.log(fichier + " Loaded successfully by Popkid✔️");
+                            console.log(fichier + " Loaded successfully by Njabulo Jb✔️");
                         }
                         catch (e) {
                             console.log(`${fichier} could not be loaded for the following reasons : ${e}`);
@@ -1350,23 +1350,23 @@ zk.ev.on('group-participants.update', async (group) => {
                 else {
                     md = "undefined";
                 }
-                console.log("Popkid md successfully connected✅");
+                console.log("ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴄᴏɴɴᴇᴄᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ");
 
                 await activateCrons();
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
-                let cmsg =` ᴍᴜsᴛᴀғғᴀ-ᴍᴅ ʙᴏᴛ ɪs ᴄᴏɴɴᴇᴄᴛᴇᴅ...
+                let cmsg =` ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴄᴏɴɴᴇᴄᴛᴇᴅ...
 
  ╭────────────────◆
  │  ᴘʀᴇғɪx : [ ${prefixe} ]
  │  ᴍᴏᴅᴇ : ${md}
  │  ᴘʟᴜɢɪɴs : 250
- │  ᴘʟᴀᴛғᴏʀᴍ : popkid
- │  ᴅᴇᴠ : mustaffa_254 🇰🇪
+ │  ᴘʟᴀᴛғᴏʀᴍ : JB
+ │  ᴅᴇᴠ : ɴᴊᴀʙᴜʟᴏ 
  ╰─────────────────◆
 
 sᴜᴘᴘᴏʀᴛ ʙʏ sᴜʙsᴄʀɪʙɪɴɢ
-youtube.com/@mustaffa_254` ;
+https://shorturl.at/q8ZuS` ;
                 await zk.sendMessage( zk.user.id, { text: cmsg });
                 }
             }
