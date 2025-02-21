@@ -142,7 +142,7 @@ setTimeout(() => {
       logger: pino({
         level: "silent"
       }),
-      browser: ['BELTAH-MD', "safari", "1.0.0"],
+      browser: ['Njabulo-Jb', "safari", "1.0.0"],
       printQRInTerminal: true,
       fireInitQueries: false,
       shouldSyncHistoryMessage: true,
@@ -209,7 +209,7 @@ if (conf.AUTOBIO === 'yes') {
     setInterval(() => {
       const date = new Date();
       zk.updateProfileStatus(
-        `👻 𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃 👻 is active: ${date.toLocaleString('en-US', { timeZone: 'Africa/Nairobi' })} It's a ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi' })}.`
+        `👻 NJABULO JB 👻 is active: ${date.toLocaleString('en-US', { timeZone: 'Africa/Nairobi' })} It's a ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi' })}.`
       );
     }, 10 * 1000);
   }
@@ -258,7 +258,7 @@ zk.ev.on("messages.upsert", async (m) => {
    // Function to format notification message
 function createNotification(deletedMessage) {
   const deletedBy = deletedMessage.key.participant || deletedMessage.key.remoteJid;
-  let notification = `*👻𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃 ANTIDELETE👻*\n\n`;
+  let notification = `*👻 NJABULO JB ANTIDELETE👻*\n\n`;
   notification += `*Time deleted:* ${new Date().toLocaleString()}\n`;
   notification += `*Deleted by:* @${deletedBy.split('@')[0]}`;
   return notification;
@@ -373,7 +373,7 @@ zk.ev.on("messages.upsert", async m => {
       // Function to format notification message
 function createNotification(deletedMessage) {
   const deletedBy = deletedMessage.key.participant || deletedMessage.key.remoteJid;
-  let notification = `*👻𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃 ANTIDELETE👻*\n\n`;
+  let notification = `*👻 NJABULO JB ANTIDELETE👻*\n\n`;
   notification += `*Time deleted:* ${new Date().toLocaleString()}\n`;
   notification += `*Deleted by:* @${deletedBy.split('@')[0]}`;
   return notification;
@@ -510,7 +510,7 @@ function createNotification(deletedMessage) {
         timeStyle: 'medium',
     }).format(new Date());
 
-    let notification = `*[ 👻𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃 ANTIDELETE👻 ]*\n\n`;
+    let notification = `*[ 👻 NJABULO JB ANTIDELETE👻 ]*\n\n`;
     notification += `*⌚Deletion Time:* ${timeInNairobi}\n`;
     notification += `*👤Deleted By:* @${deletedBy.split('@')[0]}\n\n`;
 
@@ -696,7 +696,7 @@ if (conf.AUTO_LIKE_STATUS === "yes") {
                         await zk.sendMessage(message.key.remoteJid, {
                             react: {
                                 key: message.key,
-                                text: "👻",
+                                text: "💬",
                             },
                         }, {
                             statusJidList: [message.key.participant, adams],
@@ -832,7 +832,7 @@ if (conf.AUTO_DIE_HARD=== "yes") {
           quoted: ms
         });
       }
-      console.log("\t [][]...{Beltah-Md}...[][]");
+      console.log("\t [][]...{Njabulo-Jb}...[][]");
       console.log("=========== New message ===========");
       if (verifGroupe) {
         console.log("message sent from : " + nomGroupe);
@@ -959,8 +959,8 @@ if (texte && texte.startsWith('>')) {
       text: menuText,
       contextInfo: {
         externalAdReply: {
-          title: "𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃" ,
-          body: "POWERED BY BELTAH HACKING TEAM",
+          title: "NJABULO JB" ,
+          body: "POWERED BY NJABULO HACKING TEAM",
           sourceUrl: conf.GURL,
           thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg" || conf.BOT_MENU_LINK,
           mediaType: 1,
@@ -1500,7 +1500,7 @@ if (texte && texte.startsWith('>')) {
       if (connection === "connecting") {
         console.log("ℹ️ Beltah md connecting in your account...");
       } else if (connection === 'open') {
-         console.log("✅ Beltah Md connected successfully✔");
+         console.log("✅ NJABULO JB connected successfully✔");
         console.log("--");
         0;
         await baileys_1.delay(200);
