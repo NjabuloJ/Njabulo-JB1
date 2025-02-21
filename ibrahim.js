@@ -201,7 +201,7 @@ if (conf.ANYWAY_MD === "yes") {
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\tANYWAY MD ONLINE");
+            console.log("\tɴᴊᴀʙᴜʟᴏ ᴊʙ ɪs ᴏɴʟɪɴᴇ");
             console.log("=========== written message===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -840,10 +840,10 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ Anyway Md is connecting...");
+                console.log("ℹ️ Njabulo Jb is connecting...");
             }
             else if (connection === 'open') {
-                console.log("✅ Anyway Md Connected to WhatsApp! ☺️");
+                console.log("✅ Njabulo Jb Connected to WhatsApp! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
@@ -884,8 +884,8 @@ zk.ev.on('group-participants.update', async (group) => {
 
                 let cmsg =`      ❒─❒⁠⁠⁠⁠ *BOT-IS-RUNNING* ❒⁠⁠⁠⁠─⁠⁠⁠⁠❒⁠⁠⁠⁠
 ╭❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠              
-❒⁠⁠⁠⁠ 𝑫𝑬𝑽   : *MR ANYWAY*   
-❒⁠⁠⁠⁠ 𝑩𝑶𝑻   : *MR-ANYWAY-MD*
+❒⁠⁠⁠⁠ 𝑫𝑬𝑽   : *Njabulo Jb*   
+❒⁠⁠⁠⁠ 𝑩𝑶𝑻   : *Njabulo Jb*
 ╰❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠`;
                 await zk.sendMessage(zk.user.id, { text: cmsg });
                 }
