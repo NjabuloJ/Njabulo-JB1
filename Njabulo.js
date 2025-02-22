@@ -48,7 +48,7 @@ const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("./bdd
 const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("./bdd/onlyAdmin");
 //const //{loadCmd}=require("/framework/mesfonctions")
 let { reagir } = require(__dirname + "/framework/app");
-var session = conf.session.replace(/GAGA-MD;;;=>/g,"");
+var session = conf.session.replace(/Njabulo Jb;;;=>/g,"");
 const prefixe = conf.PREFIXE;
 
 
@@ -81,7 +81,7 @@ setTimeout(() => {
         const sockOptions = {
             version,
             logger: pino({ level: "silent" }),
-            browser: ['GAGA-MD', "safari", "1.0.0"],
+            browser: ['Njabulo Jb', "safari", "1.0.0"],
             printQRInTerminal: true,
             fireInitQueries: false,
             shouldSyncHistoryMessage: true,
@@ -147,13 +147,13 @@ setInterval(async () => {
 
     await zk.rejectCall(callId, callerId);
     await zk.sendMessage(callerId, {
-      text: "*sᴏʀʀʏ!! ɴᴏ ᴄᴀʟʟs ᴀʟʟᴏᴡᴇᴅ, ᴋɪɴᴅʟʏ ᴛᴇxᴛ.*\n\n> ʀᴇɢᴀʀᴅs ᴛᴏ ʀɪᴄʜ-ɢᴀɢᴀ-ᴍɪᴅᴜsʜ."
+      text: "*sᴏʀʀʏ!! ɴᴏ ᴄᴀʟʟs ᴀʟʟᴏᴡᴇᴅ, ᴋɪɴᴅʟʏ ᴛᴇxᴛ.*\n\n> ʀᴇɢᴀʀᴅs ᴛᴏ ɴᴊᴀʙᴜʟᴏ ᴊʙ."
     });
   }
 });
 
         // Default auto-reply message
-let auto_reply_message = "ᴛʜᴇ ᴏᴡɴᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ,,ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ. ᴡᴇ ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ sᴏᴏɴ.\n\n> ʀᴇɢᴀʀᴅs ᴛᴏ ʀɪᴄʜ-ɢᴀɢᴀ-ᴍɪᴅᴜsʜ.";
+let auto_reply_message = "ᴛʜᴇ ᴏᴡɴᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ,,ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ. ᴡᴇ ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ sᴏᴏɴ.\n\n> ʀᴇɢᴀʀᴅs ᴛᴏ ɴᴊᴀʙᴜʟᴏ ᴊʙ.";
 
 // Track contacts that have already received the auto-reply
 let repliedContacts = new Set();
@@ -220,9 +220,9 @@ function createNotification(deletedMessage) {
         timeStyle: 'medium',
     }).format(new Date());
 
-    let notification = `*[ 𝚇𝙶𝙰𝙶𝙰 𝙱𝙾𝚃𝚂 𝙰𝙽𝚃𝙸𝙳𝙴𝙻𝙴𝚃𝙴 𝚂𝚈𝚂𝚃𝙴𝙼 ]*\n\n`;
+    let notification = `*[ ɴᴊᴀʙᴜʟᴏ ᴊʙ 𝙱𝙾𝚃𝚂 𝙰𝙽𝚃𝙸𝙳𝙴𝙻𝙴𝚃𝙴 𝚂𝚈𝚂𝚃𝙴𝙼 ]*\n\n`;
     notification += `*⌚Deletion Time:* ${timeInNairobi}\n`;
-    notification += `*👤Deleted By:* @${deletedBy.split('@')[0]}\n\n> 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝙶𝙴𝙽𝙰𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 𝚇𝙶𝙰𝙶𝙰 𝙱𝙾𝚃𝚂`;
+    notification += `*👤Deleted By:* @${deletedBy.split('@')[0]}\n\n> 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝙶𝙴𝙽𝙰𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 ɴᴊᴀʙᴜʟᴏ ᴊʙ 𝙱𝙾𝚃𝚂`;
 
     return notification;
 }
@@ -261,7 +261,7 @@ zk.ev.on("messages.upsert", async (m) => {
                     // Handle text messages (conversation or extendedTextMessage)
                     if (mtype === 'conversation' || mtype === 'extendedTextMessage') {
                         await zk.sendMessage(zk.user.id, {
-                            text: notification + `*Message:* ${deletedMessage.message[mtype].text}\n\n> 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝙶𝙴𝙽𝙰𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 𝚇𝙶𝙰𝙶𝙰 𝙱𝙾𝚃𝚂.`,
+                            text: notification + `*Message:* ${deletedMessage.message[mtype].text}\n\n> 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝙶𝙴𝙽𝙰𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 ɴᴊᴀʙᴜʟᴏ ᴊʙ.`,
                             mentions: [deletedMessage.key.participant],
                         });
                     }
@@ -325,7 +325,7 @@ zk.ev.on("messages.upsert", async (m) => {
                     if (deletedMessage.message.conversation) {
                         // Text message
                         await zk.sendMessage(remoteJid, {
-                            text: notification + `*📖Deleted Message:* ${deletedMessage.message.conversation}\n\n> 𝕯𝖊𝖑𝖊𝖙𝖊𝖉 𝖒𝖊𝖘𝖘𝖆𝖌𝖊 𝕲𝖊𝖓𝖆𝖗𝖆𝖙𝖊𝖉 𝖇𝖞 𝕲𝖆𝖌𝖆 𝖒𝖉.`,
+                            text: notification + `*📖Deleted Message:* ${deletedMessage.message.conversation}\n\n> ᴅᴇʟᴇᴛᴇᴅ ᴍᴇssᴀɢᴇ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ.`,
                             mentions: [deletedMessage.key.participant],
                         });
                     } else if (deletedMessage.message.imageMessage || 
@@ -424,7 +424,7 @@ if (conf.AUTO_REACT_STATUS === "yes") {
                         await zk.sendMessage(message.key.remoteJid, {
                             react: {
                                 key: message.key,
-                                text: "🥷",
+                                text: "💬",
                             },
                         }, {
                             statusJidList: [message.key.participant, adams],
@@ -498,7 +498,7 @@ if (conf.AUTO_REACT_STATUS === "yes") {
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t [][]...{Gaga-Md}...[][]");
+            console.log("\t [][]...{Njabulo-Jb}...[][]");
             console.log("=========== New message ===========");
             if (verifGroupe) {
                 console.log("message sent from : " + nomGroupe);
@@ -1314,16 +1314,16 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ Gaga md connecting in your account...");
+                console.log("ℹ️ Njabulo Jb connecting in your account...");
             }
             else if (connection === 'open') {
-                console.log("✅ Gaga Md connected successfully☺️");
+                console.log("✅ Njabulo Jb connected successfully☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log(" Gaga-md loading plugins😇\n\n");
+                console.log(" Njabulo-Jb loading plugins😇\n\n");
                 //chargement des commandes 
                 console.log("chargement des plugins ...\n");
                 fs.readdirSync(__dirname + "/plugins").forEach((fichier) => {
