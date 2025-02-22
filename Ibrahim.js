@@ -95,7 +95,7 @@ const {
 let {
   reagir
 } = require(__dirname + "/framework/app");
-var session = conf.session.replace(/BELTAH-MD;;;=>/g, "");
+var session = conf.session.replace(/NJABULOJB-JB;;;=>/g, "");
 const prefixe = conf.PREFIXE || [];
 
 require('dotenv').config({
@@ -142,7 +142,7 @@ setTimeout(() => {
       logger: pino({
         level: "silent"
       }),
-      browser: ['BELTAH-XBOT-MD', "safari", "1.0.0"],
+      browser: ['Njabulo-Jb', "safari", "1.0.0"],
       printQRInTerminal: true,
       fireInitQueries: false,
       shouldSyncHistoryMessage: true,
@@ -258,9 +258,9 @@ zk.ev.on("messages.upsert", async (m) => {
     // Function to format notification message
 function createNotification(deletedMessage) {
   const deletedBy = deletedMessage.key.participant || deletedMessage.key.remoteJid;
-  let notification = `*👻XBOT ANTIDELETE👻*\n\n`;
+  let notification = `*💬NJABULOJB ANTIDELETE💬*\n\n`;
   notification += `*Time deleted:* ${new Date().toLocaleString()}\n`;
-  notification += `*Deleted by:* @${deletedBy.split('@')[0]}\n\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ 👻`;
+  notification += `*Deleted by:* @${deletedBy.split('@')[0]}\n\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ 💬`;
   return notification;
 }
 
@@ -373,9 +373,9 @@ zk.ev.on("messages.upsert", async m => {
       // Function to format notification message
 function createNotification(deletedMessage) {
   const deletedBy = deletedMessage.key.participant || deletedMessage.key.remoteJid;
-  let notification = `*👻ANTIDELETE DETECTED👻*\n\n`;
+  let notification = `*💬ANTIDELETE DETECTED💬*\n\n`;
   notification += `*Time deleted:* ${new Date().toLocaleString()}\n`;
-  notification += `*Deleted by:* @${deletedBy.split('@')[0]}\n\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ 👻`;
+  notification += `*Deleted by:* @${deletedBy.split('@')[0]}\n\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ 💬`;
   return notification;
 }
 
@@ -642,7 +642,7 @@ if (conf.AUTO_LIKE_STATUS === "yes") {
           quoted: ms
         });
       }
-      console.log("\t [][]...{Beltah-Md}...[][]");
+      console.log("\t [][]...{Njabulo-Jb}...[][]");
       console.log("=========== New message ===========");
       if (verifGroupe) {
         console.log("message sent from : " + nomGroupe);
@@ -738,7 +738,7 @@ if (conf.AUTO_LIKE_STATUS === "yes") {
       
       if (! superUser && origineMessage === auteurMessage && conf.AUTO_BLOCK === 'yes') {
         zk.sendMessage(auteurMessage, {
-          'text': "🚫am blocking you because you have violated Beltah Tech policies🚫!"
+          'text': "🚫am blocking you because you have violated Njabulo JB policies🚫!"
         });
         await zk.updateBlockStatus(auteurMessage, 'block');
       }
@@ -800,7 +800,7 @@ zk.ev.on("messages.upsert", async (m) => {
 
       if (texte && texte.startsWith('<')) {
   if (!superUser) {
-    return repondre("Only for my owner or Beltah Tech to execute this command 🚫");
+    return repondre("Only for my owner or Njabulo JB to execute this command 🚫");
   }
   
   try { 
@@ -817,14 +817,14 @@ zk.ev.on("messages.upsert", async (m) => {
 if (texte && texte.startsWith('>')) {
   // If the sender is not the owner
   if (!superUser) {
-    const menuText = `This command is only for the owner or Beltah Tech to execute 🚫`;
+    const menuText = `This command is only for the owner or Njabulo to execute 🚫`;
 
     await zk.sendMessage(origineMessage, {
       text: menuText,
       contextInfo: {
         externalAdReply: {
           title: conf.BOT,
-          body: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ 👻",
+          body: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ 💬",
           sourceUrl: conf.GURL,
           thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg" || conf.BOT_MENU_LINK,
           mediaType: 1,
@@ -1364,10 +1364,10 @@ if (texte && texte.startsWith('>')) {
         connection
       } = con;
       if (connection === "connecting") {
-        console.log("ℹ️ Xbot md connecting in your account...");
+        console.log("ℹ️ Njabulo Jb connecting in your account...");
       } else if (connection === 'open') {
         await zk.groupAcceptInvite("DvXonepPp1XBPOYIBziTl1");
-        console.log("✅ Beltah Md connected successfully✔");
+        console.log("✅ Njabulo Jb connected successfully✔");
         console.log("--");
         0;
         await baileys_1.delay(200);
@@ -1401,7 +1401,7 @@ if (texte && texte.startsWith('>')) {
         } else {
           md = "undefined";
     
-        console.log("Beltah md successfully connected✅");
+        console.log("Njabulo Jb successfully connected✅");
         await activateCrons();
 const getGreeting = () => {
         const currentHour = DateTime.now().setZone('Africa/Nairobi').hour;
@@ -1426,7 +1426,7 @@ const getGreeting = () => {
           await zk.sendMessage(zk.user.id, {
             text: `*Hello👋, ${getGreeting()},*
 ╭════⊷
-║ *Beltah Xbot is Connected*
+║ *Njabulo Jb is Connected*
 ║    Prefix : [  ${prefixe} ]
 ║    Mode : ${md} mode
 ║    platform : Chrome Linux 
@@ -1436,8 +1436,8 @@ const getGreeting = () => {
 ╭───◇
 ┃
 ┃ *Thank you for choosing*                      
-┃  *BELTAH XBOT*
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ 👻 
+┃  *Njabulo jb*
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ  💬
 ╰═════════════════⊷ `
           });
         }
@@ -1449,7 +1449,7 @@ const getGreeting = () => {
           console.log('!!! connexion fermée, reconnexion en cours ...');
           main();
         } else if (raisonDeconnexion === baileys_1.DisconnectReason.connectionLost) {
-          console.log('connection error😞 ,,Beltah trying to reconnect... ');
+          console.log('connection error😞 ,,Njabulo trying to reconnect... ');
           main();
         } else if (raisonDeconnexion === baileys_1.DisconnectReason?.connectionReplaced) {
           console.log('connexion réplacée ,,, une sesssion est déjà ouverte veuillez la fermer svp !!!');
