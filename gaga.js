@@ -147,13 +147,13 @@ setInterval(async () => {
 
     await zk.rejectCall(callId, callerId);
     await zk.sendMessage(callerId, {
-      text: "*sᴏʀʀʏ!! ɴᴏ ᴄᴀʟʟs ᴀʟʟᴏᴡᴇᴅ, ᴋɪɴᴅʟʏ ᴛᴇxᴛ.*\n\n> ʀᴇɢᴀʀᴅs ᴛᴏ ʀɪᴄʜ-ɢᴀɢᴀ-ᴍɪᴅᴜsʜ."
+      text: "*sᴏʀʀʏ!! ɴᴏ ᴄᴀʟʟs ᴀʟʟᴏᴡᴇᴅ, ᴋɪɴᴅʟʏ ᴛᴇxᴛ.*\n\n> ʀᴇɢᴀʀᴅs ᴛᴏ ɴᴊᴀʙᴜʟᴏ-ᴊʙ-ᴏғғɪᴄᴇ."
     });
   }
 });
 
         // Default auto-reply message
-let auto_reply_message = "ᴛʜᴇ ᴏᴡɴᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ,,ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ. ᴡᴇ ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ sᴏᴏɴ.\n\n> ʀᴇɢᴀʀᴅs ᴛᴏ ʀɪᴄʜ-ɢᴀɢᴀ-ᴍɪᴅᴜsʜ.";
+let auto_reply_message = "ᴛʜᴇ ᴏᴡɴᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ,,ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ. ᴡᴇ ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ sᴏᴏɴ.\n\n> ʀᴇɢᴀʀᴅs ᴛᴏ ɴᴊᴀʙᴜʟᴏ-ᴊʙ-ᴏғғɪᴄᴇ.";
 
 // Track contacts that have already received the auto-reply
 let repliedContacts = new Set();
@@ -267,9 +267,9 @@ function createNotification(deletedMessage) {
         timeStyle: 'medium',
     }).format(new Date());
 
-    let notification = `*[ 𝚇𝙶𝙰𝙶𝙰 𝙱𝙾𝚃𝚂 𝙰𝙽𝚃𝙸𝙳𝙴𝙻𝙴𝚃𝙴 𝚂𝚈𝚂𝚃𝙴𝙼 ]*\n\n`;
+    let notification = `*[ 𝙽𝙸𝙰𝙱𝚄𝙻𝙾 𝙹𝙱 𝙰𝙽𝚃𝙸𝙳𝙴𝙻𝙴𝚃𝙴 𝚂𝚈𝚂𝚃𝙴𝙼 ]*\n\n`;
     notification += `*⌚Deletion Time:* ${timeInNairobi}\n`;
-    notification += `*👤Deleted By:* @${deletedBy.split('@')[0]}\n\n> 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝙶𝙴𝙽𝙰𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 𝚇𝙶𝙰𝙶𝙰 𝙱𝙾𝚃𝚂`;
+    notification += `*👤Deleted By:* @${deletedBy.split('@')[0]}\n\n> 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝙶𝙴𝙽𝙰𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 𝙽𝙸𝙰𝙱𝚄𝙻𝙾 𝙹𝙱`;
 
     return notification;
 }
