@@ -809,7 +809,7 @@ ${metadata.desc}`;
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ CJ-MD is connecting...");
+                console.log("ℹ️ Njabulo-Jb is connecting...");
             }
             else if (connection === 'open') {
                 console.log("✅ connection successful! ☺️");
@@ -818,7 +818,7 @@ ${metadata.desc}`;
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("CJ-MD is online 🕸\n\n");
+                console.log("Njabulo-Jb is online 🕸\n\n");
                 //chargement des commandes 
                 console.log("chargement des commandes ...\n");
                 fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
@@ -851,7 +851,7 @@ ${metadata.desc}`;
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
                 let cmsg = `
-    𝐂𝐉 𝐌𝐃 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃`;
+    ɴᴊᴀʙᴜʟᴏ ᴊʙ ɪs ᴄᴏɴɴᴇᴄᴛᴇᴅ`;
 //𝐇𝐢𝐢 𝐧𝐭𝐚𝐰𝐞𝐤𝐚 𝐢𝐧𝐠𝐢𝐧𝐞 𝐬𝐦𝐚𝐫𝐭 𝐦𝐳𝐞𝐞
                 await zk.sendMessage(zk.user.id, { text: cmsg });
                 }
