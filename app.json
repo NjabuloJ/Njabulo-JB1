@@ -70,7 +70,7 @@
     },
     "BOT_NAME": {
       "description": "you must give a name for you bot uhh??!!",
-      "value": "",
+      "value": "ɴᴊᴀʙᴜʟᴏ ᴊʙ",
       "required": true
     },
     "ADMGROUP": {
@@ -109,7 +109,7 @@
       "required": false  
     },
     "NUMERO_OWNER": {
-      "description": "Your phone number (exclude '+' and area code, e.g., '254114141192')",
+      "description": "Your phone number (exclude '+' and area code, e.g., '26777821911')",
       "value": "26777821911",
       "required": false
     },
