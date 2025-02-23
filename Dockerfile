@@ -9,8 +9,8 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/SIMON32883/MR-ANYWAY-MD  /root/ToshTech
-WORKDIR /root/toshtech/
+RUN git clone https://github.com/richgagamidush/GAGA-MD  /root/zokou
+WORKDIR /root/zokou/
 
 
 COPY package.json .
@@ -21,4 +21,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["npm", "run" , "ibrahim.js"]
+CMD ["npm", "run" , "gaga"]
