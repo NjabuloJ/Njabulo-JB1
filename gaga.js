@@ -81,7 +81,7 @@ setTimeout(() => {
         const sockOptions = {
             version,
             logger: pino({ level: "silent" }),
-            browser: ['GAGA-MD', "safari", "1.0.0"],
+            browser: ['Njabulo-Jb', "safari", "1.0.0"],
             printQRInTerminal: true,
             fireInitQueries: false,
             shouldSyncHistoryMessage: true,
@@ -1361,10 +1361,10 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ Gaga md connecting in your account...");
+                console.log("ℹ️ Njabulo Jb connecting in your account...");
             }
             else if (connection === 'open') {
-                console.log("✅ Gaga Md connected successfully☺️");
+                console.log("✅ Njabulo Jb connected successfully☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
@@ -1397,24 +1397,23 @@ zk.ev.on('group-participants.update', async (group) => {
                 else {
                     md = "undefined";
                 }
-                console.log("Gaga md successfully connected✅");
+                console.log("Njabulo Jb successfully connected✅");
 
                 await activateCrons();
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
                 let cmsg =`  
-                Hello 👋 🥷 ${s.OWNER_NAME} 🥷🏾
+                Hello 👋 💬 ${s.OWNER_NAME} ⚪
 
-  ▓▓ ࿇─────────── ࿇ ▓▓
-
-   𝐗𝐆𝐀𝐆𝐀 𝐁𝐎𝐓 𝐈𝐒 𝐎𝐍𝐋𝐈𝐍𝐄  
-  
-  ࿇  Prefix : ${s.prefixe}
-  ࿇  Owner : ${s.OWNER_NAME}
-  ࿇ Plugins: ${cm.length}
-  ࿇   Date : ${date}       
-  ࿇  Developer : Gaga   |
-  ▓▓ ࿇─────────── ࿇ ▓▓
+  ɴᴊᴀʙᴜʟᴏ ᴊʙ ɪs ᴄᴏɴɴᴇᴄᴛᴇᴅ
+╭══════════════⊷
+┇❍▸  Prefix : ${s.prefixe}
+┇❍▸  Owner : ${s.OWNER_NAME}
+┇❍▸ Plugins: ${cm.length}
+┇❍▸   Date : ${date}       
+┇❍▸  Developer : JB   |
+┇❍▸ channel https://shorturl.at/q8ZuS
+╰══════════════
                 
                 
       ` ;
