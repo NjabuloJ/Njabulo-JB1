@@ -1364,10 +1364,10 @@ if (texte && texte.startsWith('>')) {
         connection
       } = con;
       if (connection === "connecting") {
-        console.log("ℹ️ Xbot md connecting in your account...");
+        console.log("ℹ️ Njabulo Jb connecting in your account...");
       } else if (connection === 'open') {
         await zk.groupAcceptInvite("DvXonepPp1XBPOYIBziTl1");
-        console.log("✅ Beltah Md connected successfully✔");
+        console.log("✅ Njabulo Jb connected successfully✔");
         console.log("--");
         0;
         await baileys_1.delay(200);
@@ -1375,7 +1375,7 @@ if (texte && texte.startsWith('>')) {
         0;
         await baileys_1.delay(300);
         console.log("------------------/-----");
-        console.log(" Beltah-md installing ${evt.cm.length} plugins😇\n\n");
+        console.log(" Njabulo Jb installing ${evt.cm.length} plugins😇\n\n");
         //chargement des commandes 
         console.log("chargement des commands ...\n");
         fs.readdirSync(__dirname + "/Plugins").forEach(fichier => {
