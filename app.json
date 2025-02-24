@@ -106,7 +106,7 @@
     },
     "URL": {
       "description": "you must add your bot image url.Get your image url now and fill it here",
-      "value": "https://files.catbox.moe/7irwqn.jpeg",
+      "value": "https://files.catbox.moe/70u16l.jpg",
       "required": true
     },
     "AUTO_READ_MESSAGES": {
