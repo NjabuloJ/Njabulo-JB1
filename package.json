@@ -1,6 +1,6 @@
 
  {
-  "name": "BELTAH-MD",
+  "name": "Njabulo-Jb",
   "version": "2.0.0",
   "description": "",
   "main": "inx.js",
@@ -9,16 +9,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "s": "node inx.js", 
     "beltahinc": "pm2 start inx.js --attach --max-memory-restart 490M",
-    "beltah": "pm2 start beltahmd.js --attach",
+    "beltah": "pm2 start njabulo.js --attach",
     "c": "tsc"
     },
   "keywords": [
     "bot",
     "Baileys",
-    "Beltah-Md",
+    "Njabulo-Jb",
     "whatsapp",
     "whatsapp-bot",
-    "Beltah"
+    "Njabulo"
    ],
   "author": "Beltahtechinfo",
 "license": "ISC",
