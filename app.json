@@ -1,6 +1,6 @@
 {
-  "name": "Njabulo Jb",
-  "description": "Njabulo Jb is a multidevice WhatsApp bot built to make your WhatsApp enjoyable..",
+  "name": "✧⁠LUCKY_MD✧ MULT DEVICE",
+  "description": "Lucky Whatsapp device bot made by FrediEzra to help Whatsapp users to enjoy while helping..",
   "keywords": [
     "bot",
     "node",
@@ -22,13 +22,19 @@
       "value": "yes",
       "required": false
     },
-    "GREET": {
-      "description": "when enabled it automatically sends  greeting message to members in your pm",
+      "AUDIO_REPLY":
+    {
+      "description":"Enter yes for your bot to auto reply audio in all chats",
+      "value":"no",
+      "required":false
+    },
+    "AUTO_REPLY": {
+      "description": "when enabled it automatically sends  auto reply message to members in your pm",
       "value": "no",
       "required": false
     },
-    "AUTO_LIKE_STATUS": {
-      "description": "Your contact status will be liked automatically (type 'yes' to activate or 'no' to deactivate; don't write in capital letters)",
+    "AUTO_REACT_STATUS": {
+      "description": "Your contact status will be react automatically (type 'yes' to activate or 'no' to deactivate; don't write in capital letters)",
       "value": "yes",
       "required": false
     },
@@ -36,6 +42,12 @@
       "description": "This automatically update your bio status.Always make sure you insert your OWNER_NAME since it uses that to update your bio name status",
       "value": "yes",
       "required": false
+    },
+      "AUTO_SAVE_CONTACTS":
+    {
+      "description":"Enter yes for your bot to auto save contacts",
+      "value":"no",
+      "required":false
     },
     "AUTO_DOWNLOAD_STATUS": {
       "description": "Your contact status will be downloaded automatically and sent to you (type 'yes' to activate or 'no' to deactivate; don't write in capital letters)",
@@ -47,36 +59,25 @@
       "value": "yes",
       "required": false
     },
-    "ANTIVV": {
-      "description": "put yes to activate or no to deactivate",
-      "value": "yes",
+    "AUTO_STATUS_TEXT": {
+      "description": "type your genuine status message",
+      "value": "viewed ✅✅",
       "required": false
     },
-    "ANTILINK": {
-      "description": "type yes to activate or no to deactivate",
-      "value": "yes",
+    "AUTO_STATUS_REPLY": {
+      "description": "type your genuine status message",
+      "value": "no",
       "required": false
     },
-    "ANTICALL_MSG": {
+    "ANTI_CALL_TEXT": {
       "description": "Type your anticall message to always send when calls are declined.You can as well leave it blank",
-      "value": "",
+      "value": "My owner don't receive any call now because it's busy",
       "required": false
-
-    },
-    "ANTIDELETEDM": {
-      "description": "type yes if you want you bot to retrieve deleted messages on groups",
-      "value": "yes",
-      "required": true  
     },
     "BOT_NAME": {
       "description": "you must give a name for you bot uhh??!!",
-      "value": "ɴᴊᴀʙᴜʟᴏ ᴊʙ",
-      "required": true
-    },
-    "ADMGROUP": {
-      "description": "type yes if you want you bot to retrieve deleted messages on groups",
-      "value": "yes",
-      "required": false
+      "value": "✧Niabulo-Jb✧",
+      "required": false 
     },
     "PUBLIC_MODE": {
       "description": "Set 'yes' to make your bot public or 'no' to keep it private",
@@ -85,7 +86,7 @@
     },
     "HEROKU_API_KEY": {
       "description": "Insert your Heroku API key (required)",
-      "value": "HRKU-58f4243a-52be-4d15-ab7c-81944735bc47",
+      "value": "",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -100,12 +101,17 @@
     },
     "OWNER_NAME": {
       "description": "don't you have a name bro.Insert your name here!!",
-      "value": "ɴᴊᴀʙᴜʟᴏ ᴊʙ",
+      "value": "NJABULO JB",
+      "required": false
+    },
+    "URL": {
+      "description": "you must add your bot image url.Get your image url now and fill it here",
+      "value": "https://files.catbox.moe/7irwqn.jpeg",
       "required": true
     },
     "AUTO_READ_MESSAGES": {
       "description": "yes toactivate no to deactivate",
-      "value": "yes",
+      "value": "no",
       "required": false  
     },
     "NUMERO_OWNER": {
@@ -130,10 +136,10 @@
     },
     "ANTI_DELETE_MESSAGE": {
       "description": "Enable anti-delete message (set 'yes' to activate or 'no' to deactivate)",
-      "value": "yes",
+      "value": "no",
       "required": false
     },
-    "ANTICALL": {
+    "ANTI_CALL": {
       "description": "Automatically decline incoming calls (set 'on' to activate or 'off' to deactivate)",
       "value": "yes",
       "required": false
@@ -143,7 +149,7 @@
       "value": "no",
       "required": false
     },
-    "AUTO_REACT": {
+    "AUTO_REACTION": {
       "description": "Set 'yes' to enable bot reactions to messages in private chats",
       "value": "no",
       "required": false
@@ -160,4 +166,4 @@
       "plan": "heroku-postgresql:essential-0"
     }
   ]
-    }
+}
