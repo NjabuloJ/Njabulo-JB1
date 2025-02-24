@@ -1,14 +1,14 @@
 {
-  "name": "𝗕𝗘𝗟𝗧𝗔𝗛-𝗠𝗗 𝗕𝗢𝗧",
-  "description": "THIS IS OLD VERSION OF BELTAH-MD  MAKE SURE YOU UPDATE YOUR BOT ONCE CONNECTED🤖✅👻",
+  "name": "𝗡𝗝𝗔𝗕𝗨𝗟𝗢-𝗝𝗕",
+  "description": "THIS IS OLD VERSION OF Njabulo-Jb  MAKE SURE YOU UPDATE YOUR BOT ONCE CONNECTED",
   "keywords": [
     "bot",
     "node",
     "baileys",
     "whatsapp"
   ],
-  "logo": "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg",
-  "repository": "https://github.com/Beltah254/BELTAH-MD",
+  "logo": "https://files.catbox.moe/xfn913.jpg",
+  "repository": "https://github.com/NjabuloJ/Njabulo-JB1",
   "succes_url": "/",
   "stack": "container",
   "env": {
@@ -69,12 +69,12 @@
     },
     "ANTICALL_MSG": {
       "description": "Type your anticall message to always send when calls are declined.You can as well leave it blank",
-      "value": "> BELTAH-MD on board ||No calls allowed.",
+      "value": "> Njabulo-Jb on board ||No calls allowed.",
       "required": false
     },
     "BOT_NAME": {
       "description": "Change this if you don't like my name",
-      "value": "BELTAH-MD",
+      "value": "Njabulo-Jb",
       "required": true 
     },
     "GROUP_CONTROL": {
@@ -109,7 +109,7 @@
     },
     "URL": {
       "description": "Change this image and input yours",
-      "value": "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg",
+      "value": "https://files.catbox.moe/xfn913.jpg",
       "required": true
     },
     "AUTO_READ_MESSAGES": {
@@ -118,8 +118,8 @@
       "required": false  
     },
     "NUMERO_OWNER": {
-      "description": "Your phone number (exclude '+' and area code, e.g., '254114141192')",
-      "value": "254114141192",
+      "description": "Your phone number (exclude '+' and area code, e.g., '26777821911')",
+      "value": "26777821911",
       "required": false
     },
     "WARN_COUNT": {
