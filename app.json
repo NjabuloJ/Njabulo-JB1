@@ -124,7 +124,7 @@
     },
     "WARN_COUNT": {
       "description": "Set the warning limit for warning commands",
-      "value": "10",
+      "value": "3",
       "required": false
     },
     "STARTING_BOT_MESSAGE": {
