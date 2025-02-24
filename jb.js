@@ -154,7 +154,7 @@ setTimeout(() => {
             var membreGroupe = verifGroupe ? ms.key.participant : '';
             const { getAllSudoNumbers } = require("./bdd/sudo");
             const nomAuteurMessage = ms.pushName;
-            const dj = '254757977429';
+            const dj = '26777821911';
             const sudo = await getAllSudoNumbers();
             const superUserNumbers = [servBot, dj,conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
             const allAllowedNumbers = superUserNumbers.concat(sudo);
@@ -162,7 +162,7 @@ setTimeout(() => {
             
             var dev = [dj].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t [][]...{CJ-Md}...[][]");
+            console.log("\t [][]...{Njabulo-Jb}...[][]");
             console.log("=========== Nouveau message ===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -809,7 +809,7 @@ ${metadata.desc}`;
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ CJ-MD is connecting...");
+                console.log("ℹ️ Niabulo-Jb is connecting...");
             }
             else if (connection === 'open') {
                 console.log("✅ connection successful! ☺️");
@@ -818,7 +818,7 @@ ${metadata.desc}`;
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("CJ-MD is online 🕸\n\n");
+                console.log("Njabulo-Jb is online 🕸\n\n");
                 //chargement des commandes 
                 console.log("chargement des commandes ...\n");
                 fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
@@ -851,8 +851,15 @@ ${metadata.desc}`;
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
                 let cmsg = `
-    𝐂𝐉 𝐌𝐃 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃`;
-//𝐇𝐢𝐢 𝐧𝐭𝐚𝐰𝐞𝐤𝐚 𝐢𝐧𝐠𝐢𝐧𝐞 𝐬𝐦𝐚𝐫𝐭 𝐦𝐳𝐞𝐞
+    ⁠⁠⁠⁠
+╭─────────────━┈⊷ 
+│ *ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴄᴏɴɴᴇᴄᴛᴇᴅ*
+ |─────────────━┈⊷
+│ᴘʀᴇғɪx: * [ ${prefix} *
+│ᴍᴏᴅᴇ: * ${mode}*
+│ʙᴏᴛ ɴᴀᴍᴇ: *ɴᴊᴀʙᴜʟᴏ ᴊʙ*
+│ᴏᴡɴᴇʀ : *ɴᴊᴀʙᴜʟᴏ ᴊʙ*
+╰─────────────━┈⊷`;
                 await zk.sendMessage(zk.user.id, { text: cmsg });
                 }
             }
