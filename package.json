@@ -8,13 +8,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "s": "node control.js", 
     "ezra": "pm2 start control.js --attach --max-memory-restart 490M",
-    "fredi": "pm2 start imdex.js --attach",
+    "fredi": "pm2 start Niabulo.js --attach",
     "c": "tsc"
     },
   "keywords": [
     "bot",
     "Baileys",
-    "Njabulo-Md",
+    "Njabulo-Jb",
     "whatsapp",
     "whatsapp-bot",
     "Njabulojb"
