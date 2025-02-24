@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "s": "node control.js", 
     "ezra": "pm2 start control.js --attach --max-memory-restart 490M",
-    "fredi": "pm2 start Niabulo.js --attach",
+    "fredi": "pm2 start njabulo.js --attach",
     "c": "tsc"
     },
   "keywords": [
