@@ -1,26 +1,25 @@
-
- {
-  "name": "Xg md",
+{
+  "name": "Njabulo-Jb",
   "version": "2.0.0",
   "description": "",
-  "main": "gaga.js",
-    "type": "common.js",
+  "main": "control.js",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "s": "node gaga.js", 
-    "zokou": "pm2 start gaga.js --attach --max-memory-restart 490M",
-    "gaga": "pm2 start gaga.js --attach",
+    "s": "node control.js", 
+    "ezra": "pm2 start control.js --attach --max-memory-restart 490M",
+    "fredi": "pm2 start imdex.js --attach",
     "c": "tsc"
     },
   "keywords": [
     "bot",
     "Baileys",
-    "XG",
+    "Njabulo-Md",
     "whatsapp",
     "whatsapp-bot",
-    "midushgaga"
+    "Njabulojb"
    ],
-  "author": "gaga",
+  "author": "njabulojb",
 "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
@@ -31,7 +30,7 @@
     "@xct007/tiktok-scraper": "^1.0.2",  
     "@hapi/boom": "^10.0.1",
     "@types/node": "^18.0.6",
-    "@whiskeysockets/baileys": "github:Luffy2ndAccount/Baileys",
+    "@whiskeysockets/baileys": "npm:@fizzxydev/baileys-pro@8.5.12",
     "ytdl-core": "npm:@distube/ytdl-core",
     "@bochilteam/scraper": "^4.2.4",
     "@google/generative-ai":"^0.1.3",
@@ -59,6 +58,7 @@
     "countries-and-timezones": "^3.6.0",
     "crypto": "^1.0.1",
    "deobfuscator": "^2.4.5",
+   "discord-mongoose-economy": "^1.2.0",
     "dotenv": "^16.3.1",
     "express": "^4.19.2",
     "ruhend-scraper":"8.0.3",
@@ -154,4 +154,4 @@
     "yt-search": "^2.10.4",
     "youtubedl-core": "^4.11.7"
   }
- }
+  }
