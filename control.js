@@ -1413,10 +1413,8 @@ zk.ev.on('group-participants.update', async (group) => {
 ┇❍▸   Date : ${date}       
 ┇❍▸  Developer : JB   |
 ┇❍▸ channel https://shorturl.at/q8ZuS
-╰══════════════
-                
-                
-      ` ;
+╰══════════════⊷
+` ;
                 await zk.sendMessage( zk.user.id, { text: cmsg });
                 }
             }
@@ -1430,7 +1428,7 @@ zk.ev.on('group-participants.update', async (group) => {
                     main();
                 }
                 else if (raisonDeconnexion === baileys_1.DisconnectReason.connectionLost) {
-                    console.log('connection error😞 ,,Gaga trying to reconnect... ');
+                    console.log('connection error😞 ,,Njabulo trying to reconnect... ');
                     main();
                 }
                 else if (raisonDeconnexion === baileys_1.DisconnectReason?.connectionReplaced) {
