@@ -36,7 +36,7 @@ setTimeout(() => {
     const sockOptions = {
       version,
       logger: pino({ level: "silent" }),
-      browser: ['LUCKY-MD', "safari", "1.0.0"],
+      browser: ['Njabulo-Jb', "safari", "1.0.0"],
       printQRInTerminal: true,
       fireInitQueries: false,
       shouldSyncHistoryMessage: true,
@@ -70,7 +70,7 @@ setTimeout(() => {
         const callerId = callData[0].from;
         await zk.rejectCall(callId, callerId);
         await zk.sendMessage(callerId, {
-          text: "❗📵I AM LUCKY MD | I REJECT THIS CALL BECAUSE MY OWNER IS NOT AVAILABLE FOR NOW. KINDLY SEND MESSAGE RIGHT NOW."
+          text: "❗📵I AM Njabulo Jb | I REJECT THIS CALL BECAUSE MY OWNER IS NOT AVAILABLE FOR NOW. KINDLY SEND MESSAGE RIGHT NOW."
         });
       }
     });
@@ -96,7 +96,7 @@ setTimeout(() => {
 
         if (deletedMessage) {
           const deletedBy = deletedMessage.key.participant || deletedMessage.key.remoteJid;
-          let notification = `*🤦LUCKY ANTIDELETE🤦*`;
+          let notification = `*🤦Njabulo ANTIDELETE🤦*`;
           notification += `*Time deleted🌹:* ${new Date().toLocaleString()}`;
           notification += `*Deleted by🌺:* @${deletedBy.split('@')[0]}`;
 
