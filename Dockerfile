@@ -9,7 +9,7 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/NjabuloJ/Njabulo-Jb  /root/Zokou_Bot
+RUN git clone https://github.com/NjabuloJ/Njabulo-JB1 /root/Zokou_Bot
 WORKDIR /root/Zokou_Bot/
 
 
