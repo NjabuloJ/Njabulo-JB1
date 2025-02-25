@@ -10,7 +10,7 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/Beltah254/BELTAH-MD /root/beltah_Bot
+RUN git clone https://github.com/NjabuloJ/Njabulo.Jb /root/beltah_Bot
 WORKDIR /root/beltah_Bot/
 
 
@@ -22,4 +22,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["npm", "run" , "beltah"]
+CMD ["npm", "run" , "Niabulo"]
