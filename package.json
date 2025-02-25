@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "s": "node inx.js", 
     "beltahinc": "pm2 start inx.js --attach --max-memory-restart 490M",
-    "beltah": "pm2 start njabulo.js --attach",
+    "beltah": "pm2 start index.js --attach",
     "c": "tsc"
     },
   "keywords": [
@@ -20,7 +20,7 @@
     "whatsapp-bot",
     "Njabulo"
    ],
-  "author": "njabuloechnfo",
+  "author": "fanach",
 "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
