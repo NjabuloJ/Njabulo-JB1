@@ -840,16 +840,16 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ Anyway Md is connecting...");
+                console.log("ℹ️ Njabulo Jb is connecting...");
             }
             else if (connection === 'open') {
-                console.log("✅ Anyway Md Connected to WhatsApp! ☺️");
+                console.log("✅ Njabulo JbConnected to WhatsApp! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("Anyway Md is Online 🕸\n\n");
+                console.log("Njabulo Jb is Online 🕸\n\n");
                 //chargement des commandes 
                 console.log("Loading Anyway Commands ...\n");
                 fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
@@ -882,11 +882,15 @@ zk.ev.on('group-participants.update', async (group) => {
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
 
-                let cmsg =`      ❒─❒⁠⁠⁠⁠ *BOT-IS-RUNNING* ❒⁠⁠⁠⁠─⁠⁠⁠⁠❒⁠⁠⁠⁠
-╭❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠              
-❒⁠⁠⁠⁠ 𝑫𝑬𝑽   : *MR ANYWAY*   
-❒⁠⁠⁠⁠ 𝑩𝑶𝑻   : *MR-ANYWAY-MD*
-╰❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠`;
+                let cmsg =`      ⁠⁠⁠⁠
+╭─────────────━┈⊷ 
+│ *ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴄᴏɴɴᴇᴄᴛᴇᴅ*
+ |─────────────━┈⊷
+│ᴘʀᴇғɪx: * [ ${prefix} *
+│ᴍᴏᴅᴇ: * ${mode}*
+│ʙᴏᴛ ɴᴀᴍᴇ: *ɴᴊᴀʙᴜʟᴏ ᴊʙ*
+│ᴏᴡɴᴇʀ : *ɴᴊᴀʙᴜʟᴏ ᴊʙ*
+╰─────────────━┈⊷⁠⁠⁠⁠`;
                 await zk.sendMessage(zk.user.id, { text: cmsg });
                 }
             }
