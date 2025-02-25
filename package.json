@@ -16,12 +16,12 @@
   "keywords": [
     "bot",
     "Baileys",
-    "Hans-Md",
+    "Njabulo-Jb",
     "whatsapp",
     "whatsapp-bot",
-    "Hanstz"
+    "Njabulojb"
    ],
-  "author": "Hanstz",
+  "author": "Njabulojb",
 "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
