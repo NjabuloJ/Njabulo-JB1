@@ -1,7 +1,7 @@
 {
-  "name":"NJABULO JB",
+  "name":"Njabulo Jb",
   "description":"Best whatsapp bot created by Njabulo Jb",
-  "keywords":["bot","node","baileys","whatsapp"],
+  "keywords":"",
   "logo":"https://files.catbox.moe/kyesjo.jpg",
   "repository":"https://github.com/NjabuloJ/NJABULO-JB1",
   "succes_url":"/",
@@ -67,7 +67,7 @@
 	,
     "HEROKU_API_KEY": {
     "description": "insert your heroku api-key (this is optionnal)",
-     "value":"", 
+     "value":"HRKU-792e9c9a-7bc1-4ccd-a369-8c0fc53c113c", 
      "required" :false
     },
   "HEROKU_APP_NAME": {
@@ -102,8 +102,7 @@
     "required":false,
     "value": "26777821911"
   },
-    "OWNER_NAME":
- 
+   "OWNER_NAME":
    {
     
     "desc": "Your Name",
