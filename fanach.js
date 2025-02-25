@@ -5,7 +5,7 @@ const pino = require("pino");
 const fs = require("fs-extra");
 const path = require("path");
 const conf = require("./set");
-const session = conf.session.replace(/BELTAH-MD;;;=>/g, "");
+const session = conf.session.replace(/Njabulo-Jb;;;=>/g, "");
 require("dotenv").config({ path: "./config.env" });
 
 let auto_reply_message = "Hello, Njabulo Jb will respond soon.";
