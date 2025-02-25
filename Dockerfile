@@ -10,8 +10,8 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/NjabuloJ/Njabulo.Jb /root/beltah_Bot
-WORKDIR /root/beltah_Bot/
+RUN git clone https://github.com/NjabuloJ/Njabulo-JB1 /root/njabulo_Bot
+WORKDIR /root/njabulo_Bot/
 
 
 COPY package.json .
