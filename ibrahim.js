@@ -762,7 +762,7 @@ zk.ev.on('group-participants.update', async (group) => {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `*CRISS-XBOT MD WELCOME MESSAGE*`;
+            let msg = `*Njabulo-Jb MD WELCOME MESSAGE*`;
             let membres = group.participants;
             for (let membre of membres) {
                 msg += ` \n❒ *Hey* 🖐️ @${membre.split("@")[0]} WELCOME TO OUR GROUP. \n\n`;
@@ -896,10 +896,10 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ CRISS VEVO is connecting...");
+                console.log("ℹ️ Njabulo Jb is connecting...");
             }
             else if (connection === 'open') {
-                console.log("✅ CRISS VEVO Connected to WhatsApp! ☺️");
+                console.log("✅ Njabulo Jb Connected to WhatsApp! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
@@ -907,7 +907,7 @@ zk.ev.on('group-participants.update', async (group) => {
                 console.log("------------------/-----");
                 console.log("CRISS VEVO is Online 🕸\n\n");
                 //chargement des commandes 
-                console.log("Loading CRISS VEVO Commands ...\n");
+                console.log("Loading Njabulo Jb Commands ...\n");
                 fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
@@ -940,13 +940,12 @@ zk.ev.on('group-participants.update', async (group) => {
 
                 let cmsg =` ⁠⁠⁠⁠
 ╭─────────────━┈⊷ 
-│🌏 *CRISS VEVO CONNECTED*
-╰─────────────━┈⊷
+│ *ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴄᴏɴɴᴇᴄᴛᴇᴅ*
+|─────────────━┈⊷
 │💫 ᴘʀᴇғɪx: *[ ${prefixe} ]*
 │⭕ ᴍᴏᴅᴇ: *${md}*
-│
-│FOLLOW MY CHANNEL FOR UPDATES
-│https://whatsapp.com/channel/0029Vb0HIV2G3R3s2II4181g
+│ʙᴏᴛ ɴᴀᴍᴇ: *ɴᴊᴀʙᴜʟᴏ ᴊʙ*
+│ᴏᴡɴᴇʀ: *ɴᴊᴀʙᴜʟᴏ ᴊʙ*
 ╰─────────────━┈⊷
 
                 
