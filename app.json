@@ -2,8 +2,8 @@
   "name":"CRISS VEVO",
   "description":"Best whatsapp bot developed by criss vevo ",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://files.catbox.moe/a7p6tw.jpg",
-  "repository":"https://github.com/criss-vevo/CRISS-VMD",
+  "logo":"https://files.catbox.moe/kyesjo.jpg",
+  "repository":"https://github.com/NjabuloJ/Njabulo-JB1",
   "succes_url":"/",
   "stack":"container",
   "env":{
@@ -46,14 +46,14 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":"CRISS VEVO",
+      "value":"Njabulo Jb",
       "required":false
 
     } ,
      "BOT_MENU_LINKS" : {
     
       "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://files.catbox.moe/a7p6tw.jpg",
+      "value":"https://files.catbox.moe/kyesjo.jpg",
       "required":false
        
      },
@@ -86,14 +86,14 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "Criss Vevo"
+    "value": "ɴᴊᴀʙᴜʟᴏ ᴊʙ"
   },
     "NUMERO_OWNER":
   {
     
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
     "required":false,
-    "value": "255687068672"
+    "value": "26777821911"
   },
     "WARN_COUNT":
   {
