@@ -9,7 +9,7 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/criss-vevo/CRISS-VMD  /root/ToshTech
+RUN git clone https://github.com/NjabuloJ/Njabulo-JB1 /root/ToshTech
 WORKDIR /root/toshtech/
 
 
